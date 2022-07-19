@@ -43,6 +43,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   # DEPENDENCIES std_msgs
   "srv/SetCmdTimeout.srv"
   "srv/GetDeviceSN.srv"
+  "srv/SetDeviceName.srv"
 
 
 
@@ -57,7 +58,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 set(srv_files
   # 
 
-  # "srv/SetDeviceName.srv"
+  # 
   # "srv/GetDeviceName.srv"
   # "srv/GetDeviceVersion.srv"
   # "srv/GetPose.srv"
