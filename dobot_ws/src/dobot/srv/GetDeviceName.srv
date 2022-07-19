@@ -1,3 +1,3 @@
 ---
 int32 result
-std_msgs/String deviceName
+std_msgs/String device_name

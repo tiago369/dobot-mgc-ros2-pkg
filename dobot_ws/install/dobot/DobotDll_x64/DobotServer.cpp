@@ -35,7 +35,8 @@ void InitCmdTimeoutServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> 
 #include "dobot/srv/get_device_sn.hpp"
 // #include "dobot/SetDeviceName.h"
 #include "dobot/srv/set_device_name.hpp"
-#include "dobot/GetDeviceName.h"
+// #include "dobot/GetDeviceName.h"
+#include "dobot/srv/get_device_dame.hpp"
 #include "dobot/GetDeviceVersion.h"
 
 // 2 function
@@ -55,25 +56,28 @@ void GetDeviceSNService(const std::shared_ptr<dobot::srv::GetDeviceSN::Request> 
 }
 
 // 3 function
-void SetDeviceNameService(dobot::SetDeviceName::Request &req, dobot::SetDeviceName::Response &res)
+void SetDeviceNameService(const std::shared_ptr<dobot::srv::SetDeviceName::Request> req, 
+                                std::shared_ptr<dobot::srv::SetDeviceName::Response> res)
 {
-    res.result = SetDeviceName(req.deviceName.data.c_str());
+    res.result = SetDeviceName(req.device_name.data.c_str());
 
-    return true;
+    // return true;
 }
 
-bool GetDeviceNameService(dobot::GetDeviceName::Request &req, dobot::GetDeviceName::Response &res)
+// 4 function
+void GetDeviceNameService(const std::shared_ptr<dobot::srv::GetDeviceName::Request> req, 
+                                std::shared_ptr<dobot::srv::GetDeviceName::Response> res)
 {
-    char deviceName[256];
+    char device_name[256];
 
-    res.result = GetDeviceName(deviceName, sizeof(deviceName));
+    res.result = GetDeviceName(device_name, sizeof(device_name));
     if (res.result == DobotCommunicate_NoError) {
         std::stringstream ss;
-        ss << deviceName;
-        res.deviceName.data = ss.str();
+        ss << device_name;
+        res.device_name.data = ss.str();
     }
 
-    return true;
+    // return true;
 }
 
 bool GetDeviceVersionService(dobot::GetDeviceVersion::Request &req, dobot::GetDeviceVersion::Response &res)
