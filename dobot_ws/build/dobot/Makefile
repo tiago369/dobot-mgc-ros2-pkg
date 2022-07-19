@@ -570,6 +570,33 @@ dobot__py/fast:
 	$(MAKE) -f dobot__py/CMakeFiles/dobot__py.dir/build.make dobot__py/CMakeFiles/dobot__py.dir/build
 .PHONY : dobot__py/fast
 
+rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.o: rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.o
+
+.PHONY : rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.o
+
+# target to build an object file
+rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.o:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_generator_c.dir/build.make CMakeFiles/dobot__rosidl_generator_c.dir/rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.o
+.PHONY : rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.o
+
+rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.i: rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.i
+
+.PHONY : rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.i:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_generator_c.dir/build.make CMakeFiles/dobot__rosidl_generator_c.dir/rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.i
+.PHONY : rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.i
+
+rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.s: rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.s
+
+.PHONY : rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.s:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_generator_c.dir/build.make CMakeFiles/dobot__rosidl_generator_c.dir/rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.s
+.PHONY : rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.c.s
+
 rosidl_generator_c/dobot/srv/detail/set_cmd_timeout__functions.o: rosidl_generator_c/dobot/srv/detail/set_cmd_timeout__functions.c.o
 
 .PHONY : rosidl_generator_c/dobot/srv/detail/set_cmd_timeout__functions.o
@@ -678,6 +705,33 @@ rosidl_generator_py/dobot/_dobot_s.ep.rosidl_typesupport_introspection_c.c.s:
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/dobot/_dobot_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/dobot/_dobot_s.ep.rosidl_typesupport_introspection_c.c.s
 
+rosidl_generator_py/dobot/srv/_get_device_sn_s.o: rosidl_generator_py/dobot/srv/_get_device_sn_s.c.o
+
+.PHONY : rosidl_generator_py/dobot/srv/_get_device_sn_s.o
+
+# target to build an object file
+rosidl_generator_py/dobot/srv/_get_device_sn_s.c.o:
+	$(MAKE) -f CMakeFiles/dobot__python.dir/build.make CMakeFiles/dobot__python.dir/rosidl_generator_py/dobot/srv/_get_device_sn_s.c.o
+.PHONY : rosidl_generator_py/dobot/srv/_get_device_sn_s.c.o
+
+rosidl_generator_py/dobot/srv/_get_device_sn_s.i: rosidl_generator_py/dobot/srv/_get_device_sn_s.c.i
+
+.PHONY : rosidl_generator_py/dobot/srv/_get_device_sn_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/dobot/srv/_get_device_sn_s.c.i:
+	$(MAKE) -f CMakeFiles/dobot__python.dir/build.make CMakeFiles/dobot__python.dir/rosidl_generator_py/dobot/srv/_get_device_sn_s.c.i
+.PHONY : rosidl_generator_py/dobot/srv/_get_device_sn_s.c.i
+
+rosidl_generator_py/dobot/srv/_get_device_sn_s.s: rosidl_generator_py/dobot/srv/_get_device_sn_s.c.s
+
+.PHONY : rosidl_generator_py/dobot/srv/_get_device_sn_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/dobot/srv/_get_device_sn_s.c.s:
+	$(MAKE) -f CMakeFiles/dobot__python.dir/build.make CMakeFiles/dobot__python.dir/rosidl_generator_py/dobot/srv/_get_device_sn_s.c.s
+.PHONY : rosidl_generator_py/dobot/srv/_get_device_sn_s.c.s
+
 rosidl_generator_py/dobot/srv/_set_cmd_timeout_s.o: rosidl_generator_py/dobot/srv/_set_cmd_timeout_s.c.o
 
 .PHONY : rosidl_generator_py/dobot/srv/_set_cmd_timeout_s.o
@@ -704,6 +758,33 @@ rosidl_generator_py/dobot/srv/_set_cmd_timeout_s.s: rosidl_generator_py/dobot/sr
 rosidl_generator_py/dobot/srv/_set_cmd_timeout_s.c.s:
 	$(MAKE) -f CMakeFiles/dobot__python.dir/build.make CMakeFiles/dobot__python.dir/rosidl_generator_py/dobot/srv/_set_cmd_timeout_s.c.s
 .PHONY : rosidl_generator_py/dobot/srv/_set_cmd_timeout_s.c.s
+
+rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.o: rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_c.dir/rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.o
+
+rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.i: rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_c.dir/rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.i
+
+rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.s: rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_c.dir/rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.cpp.s
 
 rosidl_typesupport_c/dobot/srv/set_cmd_timeout__type_support.o: rosidl_typesupport_c/dobot/srv/set_cmd_timeout__type_support.cpp.o
 
@@ -732,6 +813,33 @@ rosidl_typesupport_c/dobot/srv/set_cmd_timeout__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_c.dir/rosidl_typesupport_c/dobot/srv/set_cmd_timeout__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/dobot/srv/set_cmd_timeout__type_support.cpp.s
 
+rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.o: rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.o
+
+rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.i: rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.i
+
+rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.s: rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.cpp.s
+
 rosidl_typesupport_cpp/dobot/srv/set_cmd_timeout__type_support.o: rosidl_typesupport_cpp/dobot/srv/set_cmd_timeout__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_cpp/dobot/srv/set_cmd_timeout__type_support.o
@@ -758,6 +866,33 @@ rosidl_typesupport_cpp/dobot/srv/set_cmd_timeout__type_support.s: rosidl_typesup
 rosidl_typesupport_cpp/dobot/srv/set_cmd_timeout__type_support.cpp.s:
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/dobot/srv/set_cmd_timeout__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/dobot/srv/set_cmd_timeout__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.o: rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.o:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.i: rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.i:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.s: rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.s:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/dobot/srv/detail/set_cmd_timeout__type_support_c.o: rosidl_typesupport_fastrtps_c/dobot/srv/detail/set_cmd_timeout__type_support_c.cpp.o
 
@@ -786,6 +921,33 @@ rosidl_typesupport_fastrtps_c/dobot/srv/detail/set_cmd_timeout__type_support_c.c
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/dobot/srv/detail/set_cmd_timeout__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/dobot/srv/detail/set_cmd_timeout__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.o: rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.i: rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.s: rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/set_cmd_timeout__type_support.o: rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/set_cmd_timeout__type_support.cpp.o
 
 .PHONY : rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/set_cmd_timeout__type_support.o
@@ -813,6 +975,33 @@ rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/set_cmd_timeout__t
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/set_cmd_timeout__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/set_cmd_timeout__type_support.cpp.s
 
+rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.o: rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.o
+
+.PHONY : rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.o:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.o
+
+rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.i: rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.i
+
+.PHONY : rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.i:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.i
+
+rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.s: rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.s
+
+.PHONY : rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.s:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.c.s
+
 rosidl_typesupport_introspection_c/dobot/srv/detail/set_cmd_timeout__type_support.o: rosidl_typesupport_introspection_c/dobot/srv/detail/set_cmd_timeout__type_support.c.o
 
 .PHONY : rosidl_typesupport_introspection_c/dobot/srv/detail/set_cmd_timeout__type_support.o
@@ -839,6 +1028,33 @@ rosidl_typesupport_introspection_c/dobot/srv/detail/set_cmd_timeout__type_suppor
 rosidl_typesupport_introspection_c/dobot/srv/detail/set_cmd_timeout__type_support.c.s:
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/dobot/srv/detail/set_cmd_timeout__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/dobot/srv/detail/set_cmd_timeout__type_support.c.s
+
+rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.o: rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.o
+
+.PHONY : rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.o:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.i: rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.i
+
+.PHONY : rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.i:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.s: rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.s
+
+.PHONY : rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.s:
+	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/dobot/srv/detail/set_cmd_timeout__type_support.o: rosidl_typesupport_introspection_cpp/dobot/srv/detail/set_cmd_timeout__type_support.cpp.o
 
@@ -911,6 +1127,9 @@ help:
 	@echo "... gtest_main"
 	@echo "... gtest"
 	@echo "... dobot__py"
+	@echo "... rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.o"
+	@echo "... rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.i"
+	@echo "... rosidl_generator_c/dobot/srv/detail/get_device_sn__functions.s"
 	@echo "... rosidl_generator_c/dobot/srv/detail/set_cmd_timeout__functions.o"
 	@echo "... rosidl_generator_c/dobot/srv/detail/set_cmd_timeout__functions.i"
 	@echo "... rosidl_generator_c/dobot/srv/detail/set_cmd_timeout__functions.s"
@@ -923,24 +1142,45 @@ help:
 	@echo "... rosidl_generator_py/dobot/_dobot_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/dobot/_dobot_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/dobot/_dobot_s.ep.rosidl_typesupport_introspection_c.s"
+	@echo "... rosidl_generator_py/dobot/srv/_get_device_sn_s.o"
+	@echo "... rosidl_generator_py/dobot/srv/_get_device_sn_s.i"
+	@echo "... rosidl_generator_py/dobot/srv/_get_device_sn_s.s"
 	@echo "... rosidl_generator_py/dobot/srv/_set_cmd_timeout_s.o"
 	@echo "... rosidl_generator_py/dobot/srv/_set_cmd_timeout_s.i"
 	@echo "... rosidl_generator_py/dobot/srv/_set_cmd_timeout_s.s"
+	@echo "... rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.o"
+	@echo "... rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.i"
+	@echo "... rosidl_typesupport_c/dobot/srv/get_device_sn__type_support.s"
 	@echo "... rosidl_typesupport_c/dobot/srv/set_cmd_timeout__type_support.o"
 	@echo "... rosidl_typesupport_c/dobot/srv/set_cmd_timeout__type_support.i"
 	@echo "... rosidl_typesupport_c/dobot/srv/set_cmd_timeout__type_support.s"
+	@echo "... rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.o"
+	@echo "... rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.i"
+	@echo "... rosidl_typesupport_cpp/dobot/srv/get_device_sn__type_support.s"
 	@echo "... rosidl_typesupport_cpp/dobot/srv/set_cmd_timeout__type_support.o"
 	@echo "... rosidl_typesupport_cpp/dobot/srv/set_cmd_timeout__type_support.i"
 	@echo "... rosidl_typesupport_cpp/dobot/srv/set_cmd_timeout__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/dobot/srv/detail/get_device_sn__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/dobot/srv/detail/set_cmd_timeout__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/dobot/srv/detail/set_cmd_timeout__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/dobot/srv/detail/set_cmd_timeout__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/get_device_sn__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/set_cmd_timeout__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/set_cmd_timeout__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/dobot/srv/detail/dds_fastrtps/set_cmd_timeout__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/dobot/srv/detail/get_device_sn__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/dobot/srv/detail/set_cmd_timeout__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/dobot/srv/detail/set_cmd_timeout__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/dobot/srv/detail/set_cmd_timeout__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/dobot/srv/detail/get_device_sn__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/dobot/srv/detail/set_cmd_timeout__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/dobot/srv/detail/set_cmd_timeout__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/dobot/srv/detail/set_cmd_timeout__type_support.s"

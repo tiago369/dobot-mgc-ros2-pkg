@@ -12,12 +12,12 @@
 // #include "dobot/SetCmdTimeout.h"
 #include "dobot/srv/set_cmd_timeout.hpp"
 
-bool SetCmdTimeoutService(const std::shared_ptr<dobot::srv::SetCmdTimeout::Request> req, 
+void SetCmdTimeoutService(const std::shared_ptr<dobot::srv::SetCmdTimeout::Request> req, 
                                 std::shared_ptr<dobot::srv::SetCmdTimeout::Response> res)
 {
     res.result = SetCmdTimeout(req.timeout);
 
-    return true;
+    // return true;
 }
 
 void InitCmdTimeoutServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverVec)

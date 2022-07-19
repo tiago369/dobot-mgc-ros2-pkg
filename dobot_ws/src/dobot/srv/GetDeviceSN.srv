@@ -1,3 +1,4 @@
 ---
 int32 result
-std_msgs/String deviceSN
+# std_msgs/String deviceSN
+std_msgs/String device_sn
