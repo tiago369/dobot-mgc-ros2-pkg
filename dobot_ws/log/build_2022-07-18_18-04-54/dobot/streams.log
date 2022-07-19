@@ -1,0 +1,22 @@
+[0.020s] Invoking command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot': /usr/bin/cmake /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot -DCMAKE_INSTALL_PREFIX=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot
+[0.043s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.067s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.067s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.335s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.337s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.341s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.474s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.498s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.548s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.550s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.673s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.673s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:59 (message):
+[0.673s]   rosidl_generate_interfaces() called without any interface files
+[0.673s] Call Stack (most recent call first):
+[0.673s]   CMakeLists.txt:45 (rosidl_generate_interfaces)
+[0.673s] 
+[0.673s] 
+[0.674s] -- Configuring incomplete, errors occurred!
+[0.674s] See also "/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles/CMakeOutput.log".
+[0.674s] See also "/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles/CMakeError.log".
+[0.679s] Invoked command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot' returned '1': /usr/bin/cmake /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot -DCMAKE_INSTALL_PREFIX=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot

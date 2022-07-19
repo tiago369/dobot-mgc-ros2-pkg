@@ -1,0 +1,5 @@
+source;share/dobot/local_setup.bash
+source;share/dobot/local_setup.dsv
+source;share/dobot/local_setup.ps1
+source;share/dobot/local_setup.sh
+source;share/dobot/local_setup.zsh

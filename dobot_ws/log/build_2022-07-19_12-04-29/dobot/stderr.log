@@ -1,0 +1,6 @@
+CMake Error at cmake_install.cmake:132 (file):
+  file INSTALL cannot find
+  "/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot/launch":
+  No such file or directory.
+
+

@@ -1,0 +1,42 @@
+[0.018s] Invoking command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot -- -j8 -l8
+[0.059s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.085s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.085s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.431s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.433s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.436s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.574s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.608s] -- Found rosgraph_msgs: 1.0.0 (/opt/ros/foxy/share/rosgraph_msgs/cmake)
+[0.651s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[0.685s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.722s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.724s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.836s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.839s] -- Using CATKIN_DEVEL_PREFIX: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/devel
+[0.839s] -- Using CMAKE_PREFIX_PATH: /opt/ros/foxy
+[0.868s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.868s] -- Using Debian Python package layout
+[0.868s] -- Using empy: /usr/lib/python3/dist-packages/em.py
+[1.025s] -- Using CATKIN_ENABLE_TESTING: ON
+[1.025s] -- Call enable_testing()
+[1.026s] -- Using CATKIN_TEST_RESULTS_DIR: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/test_results
+[1.044s] -- Forcing gtest/gmock from source, though one was otherwise available.
+[1.044s] -- Found gtest sources under '/usr/src/googletest': gtests will be built
+[1.044s] -- Found gmock sources under '/usr/src/googletest': gmock will be built
+[1.072s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.079s] -- Using Python nosetests: /usr/bin/nosetests3
+[1.137s] -- catkin 0.8.10
+[1.137s] -- BUILD_SHARED_LIBS is on
+[1.253s] -- Using these message generators: 
+[1.257s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.285s] CMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:59 (message):
+[1.285s]   rosidl_generate_interfaces() called without any interface files
+[1.285s] Call Stack (most recent call first):
+[1.285s]   CMakeLists.txt:45 (rosidl_generate_interfaces)
+[1.285s] 
+[1.285s] 
+[1.287s] -- Configuring incomplete, errors occurred!
+[1.287s] See also "/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles/CMakeOutput.log".
+[1.287s] See also "/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles/CMakeError.log".
+[1.293s] make: *** [Makefile:432: cmake_check_build_system] Error 1
+[1.294s] Invoked command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot -- -j8 -l8

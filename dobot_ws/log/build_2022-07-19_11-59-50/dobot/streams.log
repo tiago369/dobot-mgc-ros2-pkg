@@ -1,0 +1,62 @@
+[0.021s] Invoking command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot': /usr/bin/cmake /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot -DCMAKE_INSTALL_PREFIX=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot
+[0.045s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.072s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.072s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.338s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.340s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.344s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.526s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.576s] -- Found rosgraph_msgs: 1.0.0 (/opt/ros/foxy/share/rosgraph_msgs/cmake)
+[0.631s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[0.664s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.702s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.703s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.815s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.817s] -- Using CATKIN_DEVEL_PREFIX: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/devel
+[0.818s] -- Using CMAKE_PREFIX_PATH: 
+[0.846s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.846s] -- Using Debian Python package layout
+[0.846s] -- Using empy: /usr/lib/python3/dist-packages/em.py
+[1.058s] -- Using CATKIN_ENABLE_TESTING: ON
+[1.058s] -- Call enable_testing()
+[1.059s] -- Using CATKIN_TEST_RESULTS_DIR: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/test_results
+[1.086s] -- Forcing gtest/gmock from source, though one was otherwise available.
+[1.086s] -- Found gtest sources under '/usr/src/googletest': gtests will be built
+[1.086s] -- Found gmock sources under '/usr/src/googletest': gmock will be built
+[1.136s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.148s] -- Using Python nosetests: /usr/bin/nosetests3
+[1.242s] -- catkin 0.8.10
+[1.243s] -- BUILD_SHARED_LIBS is on
+[1.475s] -- Using these message generators: 
+[1.485s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.540s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.593s] Error parsing '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot/package.xml':
+[1.792s] Traceback (most recent call last):
+[1.792s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 143, in <module>
+[1.792s]     main()
+[1.792s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 52, in main
+[1.792s]     raise e
+[1.792s]   File "/opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 48, in main
+[1.792s]     package = parse_package_string(
+[1.792s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[1.792s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[1.793s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot/package.xml':
+[1.793s] Error(s):
+[1.793s] - The manifest of package "dobot" (with format version 1) must not contain the following tags: exec_depend
+[1.793s] - Either update to a newer format or replace <exec_depend> tags with <run_depend> tags.
+[1.814s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):
+[1.814s]   execute_process(/usr/bin/python3
+[1.814s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.814s]   /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot/package.xml
+[1.815s]   /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/ament_cmake_core/package.cmake)
+[1.815s]   returned error code 1
+[1.815s] Call Stack (most recent call first):
+[1.815s]   /opt/ros/foxy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.815s]   /opt/ros/foxy/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.815s]   CMakeLists.txt:153 (ament_lint_auto_find_test_dependencies)
+[1.815s] 
+[1.815s] 
+[1.817s] -- Configuring incomplete, errors occurred!
+[1.817s] See also "/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles/CMakeOutput.log".
+[1.817s] See also "/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles/CMakeError.log".
+[1.825s] Invoked command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot' returned '1': /usr/bin/cmake /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot -DCMAKE_INSTALL_PREFIX=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot

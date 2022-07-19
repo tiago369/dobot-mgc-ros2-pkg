@@ -1,0 +1,220 @@
+[0.000000] (-) TimerEvent: {}
+[0.000187] (dobot) JobQueued: {'identifier': 'dobot', 'dependencies': OrderedDict()}
+[0.000560] (dobot) JobStarted: {'identifier': 'dobot'}
+[0.020377] (dobot) JobProgress: {'identifier': 'dobot', 'progress': 'cmake'}
+[0.021808] (dobot) JobProgress: {'identifier': 'dobot', 'progress': 'build'}
+[0.022846] (dobot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot', '--', '-j8', '-l8'], 'cwd': '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'senai'), ('LC_TIME', 'pt_BR.UTF-8'), ('SSH_AGENT_PID', '3540'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/senai'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/senai/tiago-projects/dobot-mgc-ros2-pkg'), ('TERM_PROGRAM_VERSION', '1.69.1'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3238'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10229'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'senai'), ('JOURNAL_STREAM', '8:54125'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'senai'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/home/senai/gems/bin:/opt/ros/noetic/bin:/home/senai/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/senai/.dotnet/tools'), ('SESSION_MANAGER', 'local/C305-SP00357:@/tmp/.ICE-unix/3622,unix/C305-SP00357:/tmp/.ICE-unix/3622'), ('INVOCATION_ID', '7d886266fd614765a067d6625f3ad0db'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-d89aa92011.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '24'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:718595bd-e226-46db-9620-90091a8898d3'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://10.88.119.23:11311'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/senai/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('ROS_HOSTNAME', '10.88.119.23'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.074423] (dobot) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.099769] (-) TimerEvent: {}
+[0.100153] (dobot) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.100335] (dobot) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.199843] (-) TimerEvent: {}
+[0.300079] (-) TimerEvent: {}
+[0.388131] (dobot) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.389823] (dobot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.393348] (dobot) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.400158] (-) TimerEvent: {}
+[0.500362] (-) TimerEvent: {}
+[0.533095] (dobot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.570742] (dobot) StdoutLine: {'line': b'-- Found rosgraph_msgs: 1.0.0 (/opt/ros/foxy/share/rosgraph_msgs/cmake)\n'}
+[0.600483] (-) TimerEvent: {}
+[0.618304] (dobot) StdoutLine: {'line': b'-- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)\n'}
+[0.650677] (dobot) StdoutLine: {'line': b'-- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.686252] (dobot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.688381] (dobot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.700569] (-) TimerEvent: {}
+[0.800826] (-) TimerEvent: {}
+[0.802777] (dobot) StdoutLine: {'line': b'-- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)\n'}
+[0.805298] (dobot) StdoutLine: {'line': b'-- Using CATKIN_DEVEL_PREFIX: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/devel\n'}
+[0.805656] (dobot) StdoutLine: {'line': b'-- Using CMAKE_PREFIX_PATH: /opt/ros/foxy\n'}
+[0.832953] (dobot) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.833106] (dobot) StdoutLine: {'line': b'-- Using Debian Python package layout\n'}
+[0.833199] (dobot) StdoutLine: {'line': b'-- Using empy: /usr/lib/python3/dist-packages/em.py\n'}
+[0.900905] (-) TimerEvent: {}
+[0.977053] (dobot) StdoutLine: {'line': b'-- Using CATKIN_ENABLE_TESTING: ON\n'}
+[0.977201] (dobot) StdoutLine: {'line': b'-- Call enable_testing()\n'}
+[0.977838] (dobot) StdoutLine: {'line': b'-- Using CATKIN_TEST_RESULTS_DIR: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/test_results\n'}
+[0.994583] (dobot) StdoutLine: {'line': b'-- Forcing gtest/gmock from source, though one was otherwise available.\n'}
+[0.994737] (dobot) StdoutLine: {'line': b"-- Found gtest sources under '/usr/src/googletest': gtests will be built\n"}
+[0.994806] (dobot) StdoutLine: {'line': b"-- Found gmock sources under '/usr/src/googletest': gmock will be built\n"}
+[1.001008] (-) TimerEvent: {}
+[1.025229] (dobot) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[1.032865] (dobot) StdoutLine: {'line': b'-- Using Python nosetests: /usr/bin/nosetests3\n'}
+[1.094640] (dobot) StdoutLine: {'line': b'-- catkin 0.8.10\n'}
+[1.094788] (dobot) StdoutLine: {'line': b'-- BUILD_SHARED_LIBS is on\n'}
+[1.101092] (-) TimerEvent: {}
+[1.201329] (-) TimerEvent: {}
+[1.216956] (dobot) StdoutLine: {'line': b'-- Using these message generators: \n'}
+[1.221969] (dobot) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[1.252327] (dobot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[1.301410] (-) TimerEvent: {}
+[1.321315] (dobot) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.349718] (dobot) StdoutLine: {'line': b'-- Generating done\n'}
+[1.354189] (dobot) StdoutLine: {'line': b'-- Build files have been written to: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot\n'}
+[1.388859] (dobot) CommandEnded: {'returncode': 0}
+[1.401547] (-) TimerEvent: {}
+[1.427076] (dobot) JobProgress: {'identifier': 'dobot', 'progress': 'install'}
+[1.441745] (dobot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot'], 'cwd': '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:en'), ('USER', 'senai'), ('LC_TIME', 'pt_BR.UTF-8'), ('SSH_AGENT_PID', '3540'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/senai'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/senai/tiago-projects/dobot-mgc-ros2-pkg'), ('TERM_PROGRAM_VERSION', '1.69.1'), ('DESKTOP_SESSION', 'ubuntu'), ('APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL', 'true'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3238'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '10229'), ('_colcon_cd_root', '/opt/ros/foxy/'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'senai'), ('JOURNAL_STREAM', '8:54125'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'senai'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/cuda-10.2/bin:/home/senai/gems/bin:/opt/ros/noetic/bin:/home/senai/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/senai/.dotnet/tools'), ('SESSION_MANAGER', 'local/C305-SP00357:@/tmp/.ICE-unix/3622,unix/C305-SP00357:/tmp/.ICE-unix/3622'), ('INVOCATION_ID', '7d886266fd614765a067d6625f3ad0db'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1001/vscode-git-d89aa92011.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('ROS_DOMAIN_ID', '24'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:718595bd-e226-46db-9620-90091a8898d3'), ('QT_ACCESSIBILITY', '1'), ('ROS_MASTER_URI', 'http://10.88.119.23:11311'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/senai/gems'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1001/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('ROS_HOSTNAME', '10.88.119.23'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[1.455898] (dobot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.456069] (dobot) StdoutLine: {'line': b'-- Installing: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/_setup_util.py\n'}
+[1.456411] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/env.sh\n'}
+[1.456528] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/setup.bash\n'}
+[1.456616] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/local_setup.bash\n'}
+[1.456711] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/setup.sh\n'}
+[1.456888] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/local_setup.sh\n'}
+[1.457002] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/setup.zsh\n'}
+[1.457144] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/local_setup.zsh\n'}
+[1.457269] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/.rosinstall\n'}
+[1.457390] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/launch\n'}
+[1.457481] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86\n'}
+[1.457618] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotServer.cpp\n'}
+[1.457727] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86\n'}
+[1.457852] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libicudata.so.53.1\n'}
+[1.457995] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libDobotDll.so\n'}
+[1.458118] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5Core.so\n'}
+[1.458193] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libDobotDll.so.1.0.0\n'}
+[1.458255] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libicudata.so.53\n'}
+[1.458319] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libicuuc.so.53.1\n'}
+[1.458373] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libDobotDll.so.1\n'}
+[1.458430] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/DobotDll.h\n'}
+[1.458487] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5Network.so.5\n'}
+[1.458543] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libicui18n.so.53\n'}
+[1.458598] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libicui18n.so.53.1\n'}
+[1.458655] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libDobotDll.so.1.0\n'}
+[1.458712] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5Network.so.5.4\n'}
+[1.458767] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5Core.so.5.4.0\n'}
+[1.458821] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5Network.so.5.4.0\n'}
+[1.458875] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/dobotdll_global.h\n'}
+[1.458930] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5Network.so\n'}
+[1.458990] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5Core.so.5.4\n'}
+[1.459047] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5SerialPort.so.5.4\n'}
+[1.459105] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5SerialPort.so\n'}
+[1.459162] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5Core.so.5\n'}
+[1.459218] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5SerialPort.so.5\n'}
+[1.459274] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/DobotType.h\n'}
+[1.459330] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libicuuc.so.53\n'}
+[1.459386] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libQt5SerialPort.so.5.4.0\n'}
+[1.459442] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotClient_PTP.cpp\n'}
+[1.459499] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotClient_JOG.cpp\n'}
+[1.459559] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64\n'}
+[1.459616] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Network.so.5.6.0\n'}
+[1.459775] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Core.prl\n'}
+[1.459982] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicui18n.so.56.1\n'}
+[1.460753] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicudata.so.53.1\n'}
+[1.460840] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Core.la\n'}
+[1.460903] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libDobotDll.so\n'}
+[1.461808] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Core.so\n'}
+[1.462009] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libDobotDll.so.1.0.0\n'}
+[1.462074] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicui18n.so.56\n'}
+[1.462193] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5SerialPort.la\n'}
+[1.462364] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicudata.so.53\n'}
+[1.462429] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicuuc.so.53.1\n'}
+[1.462547] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Network.prl\n'}
+[1.462663] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libDobotDll.so.1\n'}
+[1.462722] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/DobotDll.h\n'}
+[1.463229] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Network.so.5\n'}
+[1.463389] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Core.so.5.6\n'}
+[1.463451] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5SerialPort.so.5.6.0\n'}
+[1.463566] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicui18n.so.53\n'}
+[1.463691] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicui18n.so.53.1\n'}
+[1.463749] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libDobotDll.so.1.0\n'}
+[1.463871] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Network.so.5.4\n'}
+[1.463981] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Core.so.5.4.0\n'}
+[1.464042] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Network.so.5.4.0\n'}
+[1.464623] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/dobotdll_global.h\n'}
+[1.464739] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Network.so\n'}
+[1.464802] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Core.so.5.4\n'}
+[1.464874] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicudata.so.56\n'}
+[1.465419] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicuuc.so.56.1\n'}
+[1.466380] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Network.so.5.6\n'}
+[1.466481] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicuuc.so.56\n'}
+[1.466702] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5SerialPort.so.5.6\n'}
+[1.466786] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5SerialPort.so.5.4\n'}
+[1.466854] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Core.so.5.6.0\n'}
+[1.467500] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5SerialPort.so\n'}
+[1.467880] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicudata.so.56.1\n'}
+[1.468158] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Core.so.5\n'}
+[1.468321] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5SerialPort.prl\n'}
+[1.468537] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5SerialPort.so.5\n'}
+[1.468624] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/DobotType.h\n'}
+[1.468735] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5Network.la\n'}
+[1.468846] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libicuuc.so.53\n'}
+[1.468943] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x64/libQt5SerialPort.so.5.4.0\n'}
+[1.469034] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64\n'}
+[1.469201] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotServer.cpp\n'}
+[1.469276] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86\n'}
+[1.469367] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libicudata.so.53.1\n'}
+[1.469444] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libDobotDll.so\n'}
+[1.469504] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5Core.so\n'}
+[1.469562] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libDobotDll.so.1.0.0\n'}
+[1.469621] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libicudata.so.53\n'}
+[1.469721] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libicuuc.so.53.1\n'}
+[1.469885] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libDobotDll.so.1\n'}
+[1.470018] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/DobotDll.h\n'}
+[1.470702] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5Network.so.5\n'}
+[1.472947] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libicui18n.so.53\n'}
+[1.473029] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libicui18n.so.53.1\n'}
+[1.473459] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libDobotDll.so.1.0\n'}
+[1.473548] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5Network.so.5.4\n'}
+[1.473653] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5Core.so.5.4.0\n'}
+[1.473825] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5Network.so.5.4.0\n'}
+[1.473886] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/dobotdll_global.h\n'}
+[1.474117] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5Network.so\n'}
+[1.474202] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5Core.so.5.4\n'}
+[1.474301] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5SerialPort.so.5.4\n'}
+[1.474841] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5SerialPort.so\n'}
+[1.474928] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5Core.so.5\n'}
+[1.475133] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5SerialPort.so.5\n'}
+[1.475257] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/DobotType.h\n'}
+[1.475669] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libicuuc.so.53\n'}
+[1.475753] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x86/libQt5SerialPort.so.5.4.0\n'}
+[1.475907] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotClient_PTP.cpp\n'}
+[1.476012] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotClient_JOG.cpp\n'}
+[1.476102] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64\n'}
+[1.476462] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Network.so.5.6.0\n'}
+[1.476544] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Core.prl\n'}
+[1.476754] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicui18n.so.56.1\n'}
+[1.476876] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicudata.so.53.1\n'}
+[1.476975] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Core.la\n'}
+[1.477087] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libDobotDll.so\n'}
+[1.477164] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Core.so\n'}
+[1.477522] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libDobotDll.so.1.0.0\n'}
+[1.478614] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicui18n.so.56\n'}
+[1.478695] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5SerialPort.la\n'}
+[1.478766] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicudata.so.53\n'}
+[1.478828] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicuuc.so.53.1\n'}
+[1.478888] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Network.prl\n'}
+[1.478950] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libDobotDll.so.1\n'}
+[1.479011] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/DobotDll.h\n'}
+[1.479641] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Network.so.5\n'}
+[1.479739] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Core.so.5.6\n'}
+[1.479808] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5SerialPort.so.5.6.0\n'}
+[1.479893] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicui18n.so.53\n'}
+[1.479954] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicui18n.so.53.1\n'}
+[1.480033] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libDobotDll.so.1.0\n'}
+[1.480108] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Network.so.5.4\n'}
+[1.480171] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Core.so.5.4.0\n'}
+[1.480250] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Network.so.5.4.0\n'}
+[1.480312] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/dobotdll_global.h\n'}
+[1.480373] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Network.so\n'}
+[1.480429] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Core.so.5.4\n'}
+[1.480485] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicudata.so.56\n'}
+[1.480540] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicuuc.so.56.1\n'}
+[1.480593] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Network.so.5.6\n'}
+[1.480650] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicuuc.so.56\n'}
+[1.480707] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5SerialPort.so.5.6\n'}
+[1.480772] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5SerialPort.so.5.4\n'}
+[1.480831] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Core.so.5.6.0\n'}
+[1.480887] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5SerialPort.so\n'}
+[1.480944] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicudata.so.56.1\n'}
+[1.481000] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Core.so.5\n'}
+[1.481054] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5SerialPort.prl\n'}
+[1.481111] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5SerialPort.so.5\n'}
+[1.481168] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/DobotType.h\n'}
+[1.481224] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5Network.la\n'}
+[1.481281] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libicuuc.so.53\n'}
+[1.481337] (dobot) StdoutLine: {'line': b'-- Up-to-date: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x64/DobotDll_x64/libQt5SerialPort.so.5.4.0\n'}
+[1.481394] (dobot) CommandEnded: {'returncode': 0}
+[1.501610] (-) TimerEvent: {}
+[1.525172] (dobot) JobEnded: {'identifier': 'dobot', 'rc': 0}
+[1.525786] (-) EventReactorShutdown: {}

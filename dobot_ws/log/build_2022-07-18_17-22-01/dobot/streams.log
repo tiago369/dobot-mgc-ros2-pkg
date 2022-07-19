@@ -1,0 +1,52 @@
+[0.019s] Invoking command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot': /usr/bin/cmake /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot -DCMAKE_INSTALL_PREFIX=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot
+[0.031s] CMake Warning (dev) at CMakeLists.txt:59:
+[0.031s]   Syntax Warning in cmake code at column 35
+[0.031s] 
+[0.031s]   Argument not separated from preceding token by whitespace.
+[0.031s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.031s] 
+[0.031s] CMake Warning (dev) at CMakeLists.txt:60:
+[0.031s]   Syntax Warning in cmake code at column 35
+[0.031s] 
+[0.032s]   Argument not separated from preceding token by whitespace.
+[0.032s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.032s] 
+[0.032s] CMake Warning (dev) at CMakeLists.txt:102:
+[0.032s]   Syntax Warning in cmake code at column 35
+[0.032s] 
+[0.032s]   Argument not separated from preceding token by whitespace.
+[0.032s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.032s] 
+[0.041s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.066s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.334s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.334s] CMake Warning (dev) at /opt/ros/foxy/share/ament_cmake_core/cmake/core/list_append_unique.cmake:30 (if):
+[0.334s]   Policy CMP0057 is not set: Support new IN_LIST if() operator.  Run "cmake
+[0.334s]   --help-policy CMP0057" for policy details.  Use the cmake_policy command to
+[0.335s]   set the policy and suppress this warning.
+[0.335s] 
+[0.335s]   IN_LIST will be interpreted as an operator when the policy is set to NEW.
+[0.335s]   Since the policy is not set the OLD behavior will be used.
+[0.335s] Call Stack (most recent call first):
+[0.335s]   /opt/ros/foxy/share/ament_cmake_core/cmake/index/ament_index_get_resources.cmake:51 (list_append_unique)
+[0.335s]   /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:5 (ament_index_get_resources)
+[0.335s]   /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+[0.335s]   CMakeLists.txt:20 (find_package)
+[0.335s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.335s] 
+[0.335s] CMake Error at /opt/ros/foxy/share/ament_cmake_core/cmake/core/list_append_unique.cmake:30 (if):
+[0.335s]   if given arguments:
+[0.335s] 
+[0.335s]     "NOT" "element" "IN_LIST" "paths_to_search"
+[0.335s] 
+[0.335s]   Unknown arguments specified
+[0.336s] Call Stack (most recent call first):
+[0.336s]   /opt/ros/foxy/share/ament_cmake_core/cmake/index/ament_index_get_resources.cmake:51 (list_append_unique)
+[0.336s]   /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:5 (ament_index_get_resources)
+[0.336s]   /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)
+[0.336s]   CMakeLists.txt:20 (find_package)
+[0.336s] 
+[0.336s] 
+[0.336s] -- Configuring incomplete, errors occurred!
+[0.336s] See also "/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles/CMakeOutput.log".
+[0.337s] Invoked command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot' returned '1': /usr/bin/cmake /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot -DCMAKE_INSTALL_PREFIX=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot

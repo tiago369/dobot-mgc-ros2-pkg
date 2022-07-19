@@ -1,0 +1,2 @@
+Invoking command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot': /usr/bin/cmake /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot -DCMAKE_INSTALL_PREFIX=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot
+Invoked command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot' returned '1': /usr/bin/cmake /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot -DCMAKE_INSTALL_PREFIX=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot

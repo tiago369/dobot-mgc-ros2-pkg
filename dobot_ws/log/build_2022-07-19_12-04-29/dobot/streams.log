@@ -1,0 +1,56 @@
+[0.018s] Invoking command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot -DCMAKE_INSTALL_PREFIX=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot
+[0.043s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.068s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.068s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.342s] -- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)
+[0.344s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.347s] -- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.498s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.541s] -- Found rosgraph_msgs: 1.0.0 (/opt/ros/foxy/share/rosgraph_msgs/cmake)
+[0.595s] -- Found std_msgs: 2.0.5 (/opt/ros/foxy/share/std_msgs/cmake)
+[0.628s] -- Found rclcpp: 2.4.1 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.664s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.666s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.778s] -- Found rclpy: 1.0.8 (/opt/ros/foxy/share/rclpy/cmake)
+[0.781s] -- Using CATKIN_DEVEL_PREFIX: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/devel
+[0.781s] -- Using CMAKE_PREFIX_PATH: /opt/ros/foxy
+[0.809s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.809s] -- Using Debian Python package layout
+[0.809s] -- Using empy: /usr/lib/python3/dist-packages/em.py
+[0.996s] -- Using CATKIN_ENABLE_TESTING: ON
+[0.996s] -- Call enable_testing()
+[0.997s] -- Using CATKIN_TEST_RESULTS_DIR: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/test_results
+[1.025s] -- Forcing gtest/gmock from source, though one was otherwise available.
+[1.025s] -- Found gtest sources under '/usr/src/googletest': gtests will be built
+[1.025s] -- Found gmock sources under '/usr/src/googletest': gmock will be built
+[1.073s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[1.085s] -- Using Python nosetests: /usr/bin/nosetests3
+[1.193s] -- catkin 0.8.10
+[1.193s] -- BUILD_SHARED_LIBS is on
+[1.358s] -- Using these message generators: 
+[1.365s] -- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.402s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.488s] -- Configuring done
+[1.504s] -- Generating done
+[1.509s] -- Build files have been written to: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot
+[1.517s] Invoked command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot -DCMAKE_INSTALL_PREFIX=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot
+[1.519s] Invoking command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot -- -j8 -l8
+[1.603s] Invoked command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot -- -j8 -l8
+[1.684s] Invoking command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot
+[1.703s] -- Install configuration: ""
+[1.703s] -- Installing: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/_setup_util.py
+[1.703s] -- Installing: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/env.sh
+[1.704s] -- Installing: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/setup.bash
+[1.704s] -- Installing: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/local_setup.bash
+[1.705s] -- Installing: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/setup.sh
+[1.706s] -- Installing: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/local_setup.sh
+[1.706s] -- Installing: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/setup.zsh
+[1.707s] -- Installing: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/local_setup.zsh
+[1.707s] -- Installing: /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/.rosinstall
+[1.708s] CMake Error at cmake_install.cmake:132 (file):
+[1.708s]   file INSTALL cannot find
+[1.708s]   "/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/src/dobot/launch":
+[1.708s]   No such file or directory.
+[1.708s] 
+[1.708s] 
+[1.709s] Invoked command in '/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot' returned '1': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot
