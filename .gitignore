@@ -1,1 +1,4 @@
 /.vscode
+/dobot_ws/log
+/dobot_ws/install
+/dobot_ws/build

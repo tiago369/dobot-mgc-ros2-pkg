@@ -1,14 +1,19 @@
-#include "ros/ros.h"
-#include "std_msgs/String.h"
-#include "std_msgs/Float32MultiArray.h"
-#include "DobotDll.h"
+// #include "ros/ros.h"
+#include "rclcpp/rclcpp.hpp"
+// #include "std_msgs/String.h"
+#include "std_msgs/msg/string.hpp"
+// #include "std_msgs/Float32MultiArray.h"
+#include "std_msgs/msg/float32_multi_array.hpp"
+#include "DobotDllx64/DobotDll.h"
 
 /*
  * Cmd timeout
  */
-#include "dobot/SetCmdTimeout.h"
+// #include "dobot/SetCmdTimeout.h"
+#include "dobot/srv/set_cmd_timeout.hpp"
 
-bool SetCmdTimeoutService(dobot::SetCmdTimeout::Request &req, dobot::SetCmdTimeout::Response &res)
+bool SetCmdTimeoutService(const std::shared_ptr<dobot::srv::SetCmdTimeout::Request> req, 
+                                std::shared_ptr<dobot::srv::SetCmdTimeout::Response> res)
 {
     res.result = SetCmdTimeout(req.timeout);
 

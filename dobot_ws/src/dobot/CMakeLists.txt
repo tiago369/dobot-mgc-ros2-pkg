@@ -33,13 +33,20 @@ find_package(message_generation REQUIRED)
 find_package(genmsg REQUIRED)
 find_package(geometry_msgs REQUIRED)
 # find_package(message_package REQUIRED)
-
-
-# rosidl_generate_interfaces(${PROJECT_NAME}
-#   # ${msg_files}
-#   ${srv_files}
-#   # DEPENDENCIES std_msgs
+# ament_register_extension(
+#   "rosidl_generate_interfaces"
 # )
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  # ${msg_files}
+  ${srv_files}
+  # DEPENDENCIES std_msgs
+  "srv/SetCmdTimeout.srv"
+  "srv/GetDeviceSN.srv"
+
+
+
+)
 
 ## Generate messages in the 'msg' folder
 # set(msg_files
@@ -48,66 +55,66 @@ find_package(geometry_msgs REQUIRED)
 
 ## Generate services in the 'srv' folder
 set(srv_files
-  "srv/SetCmdTimeout.srv"
-  "srv/GetDeviceSN.srv"
-  "srv/SetDeviceName.srv"
-  "srv/GetDeviceName.srv"
-  "srv/GetDeviceVersion.srv"
-  "srv/GetPose.srv"
-  "srv/GetAlarmsState.srv"
-  "srv/ClearAllAlarmsState.srv"
-  "srv/SetHOMEParams.srv"
-  "srv/GetHOMEParams.srv"
-  "srv/SetHOMECmd.srv"
-  "srv/SetEndEffectorParams.srv"
-  "srv/GetEndEffectorParams.srv"
-  "srv/SetEndEffectorLaser.srv"
-  "srv/GetEndEffectorLaser.srv"
-  "srv/SetEndEffectorSuctionCup.srv"
-  "srv/GetEndEffectorSuctionCup.srv"
-  "srv/SetEndEffectorGripper.srv"
-  "srv/GetEndEffectorGripper.srv"
-  "srv/SetJOGJointParams.srv"
-  "srv/GetJOGJointParams.srv"
-  "srv/SetJOGCoordinateParams.srv"
-  "srv/GetJOGCoordinateParams.srv"
-  "srv/SetJOGCommonParams.srv"
-  "srv/GetJOGCommonParams.srv"
-  "srv/SetJOGCmd.srv"
-  "srv/SetPTPJointParams.srv"
-  "srv/GetPTPJointParams.srv"
-  "srv/SetPTPCoordinateParams.srv"
-  "srv/GetPTPCoordinateParams.srv"
-  "srv/SetPTPJumpParams.srv"
-  "srv/GetPTPJumpParams.srv"
-  "srv/SetPTPCommonParams.srv"
-  "srv/GetPTPCommonParams.srv"
-  "srv/SetPTPCmd.srv"
-  "srv/SetCPParams.srv"
-  "srv/GetCPParams.srv"
-  "srv/SetCPCmd.srv"
-  "srv/SetARCParams.srv"
-  "srv/GetARCParams.srv"
-  "srv/SetARCCmd.srv"
-  "srv/SetWAITCmd.srv"
-  "srv/SetTRIGCmd.srv"
-  "srv/SetIOMultiplexing.srv"
-  "srv/GetIOMultiplexing.srv"
-  "srv/SetIODO.srv"
-  "srv/GetIODO.srv"
-  "srv/SetIOPWM.srv"
-  "srv/GetIOPWM.srv"
-  "srv/GetIODI.srv"
-  "srv/GetIOADC.srv"
-  "srv/SetEMotor.srv"
-  "srv/GetInfraredSensor.srv"
-  "srv/SetInfraredSensor.srv"
-  "srv/SetColorSensor.srv"
-  "srv/GetColorSensor.srv"
-  "srv/SetQueuedCmdStartExec.srv"
-  "srv/SetQueuedCmdStopExec.srv"
-  "srv/SetQueuedCmdForceStopExec.srv"
-  "srv/SetQueuedCmdClear.srv"
+  # 
+
+  # "srv/SetDeviceName.srv"
+  # "srv/GetDeviceName.srv"
+  # "srv/GetDeviceVersion.srv"
+  # "srv/GetPose.srv"
+  # "srv/GetAlarmsState.srv"
+  # "srv/ClearAllAlarmsState.srv"
+  # "srv/SetHOMEParams.srv"
+  # "srv/GetHOMEParams.srv"
+  # "srv/SetHOMECmd.srv"
+  # "srv/SetEndEffectorParams.srv"
+  # "srv/GetEndEffectorParams.srv"
+  # "srv/SetEndEffectorLaser.srv"
+  # "srv/GetEndEffectorLaser.srv"
+  # "srv/SetEndEffectorSuctionCup.srv"
+  # "srv/GetEndEffectorSuctionCup.srv"
+  # "srv/SetEndEffectorGripper.srv"
+  # "srv/GetEndEffectorGripper.srv"
+  # "srv/SetJOGJointParams.srv"
+  # "srv/GetJOGJointParams.srv"
+  # "srv/SetJOGCoordinateParams.srv"
+  # "srv/GetJOGCoordinateParams.srv"
+  # "srv/SetJOGCommonParams.srv"
+  # "srv/GetJOGCommonParams.srv"
+  # "srv/SetJOGCmd.srv"
+  # "srv/SetPTPJointParams.srv"
+  # "srv/GetPTPJointParams.srv"
+  # "srv/SetPTPCoordinateParams.srv"
+  # "srv/GetPTPCoordinateParams.srv"
+  # "srv/SetPTPJumpParams.srv"
+  # "srv/GetPTPJumpParams.srv"
+  # "srv/SetPTPCommonParams.srv"
+  # "srv/GetPTPCommonParams.srv"
+  # "srv/SetPTPCmd.srv"
+  # "srv/SetCPParams.srv"
+  # "srv/GetCPParams.srv"
+  # "srv/SetCPCmd.srv"
+  # "srv/SetARCParams.srv"
+  # "srv/GetARCParams.srv"
+  # "srv/SetARCCmd.srv"
+  # "srv/SetWAITCmd.srv"
+  # "srv/SetTRIGCmd.srv"
+  # "srv/SetIOMultiplexing.srv"
+  # "srv/GetIOMultiplexing.srv"
+  # "srv/SetIODO.srv"
+  # "srv/GetIODO.srv"
+  # "srv/SetIOPWM.srv"
+  # "srv/GetIOPWM.srv"
+  # "srv/GetIODI.srv"
+  # "srv/GetIOADC.srv"
+  # "srv/SetEMotor.srv"
+  # "srv/GetInfraredSensor.srv"
+  # "srv/SetInfraredSensor.srv"
+  # "srv/SetColorSensor.srv"
+  # "srv/GetColorSensor.srv"
+  # "srv/SetQueuedCmdStartExec.srv"
+  # "srv/SetQueuedCmdStopExec.srv"
+  # "srv/SetQueuedCmdForceStopExec.srv"
+  # "srv/SetQueuedCmdClear.srv"
 
 )
 
