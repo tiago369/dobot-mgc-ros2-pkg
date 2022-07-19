@@ -55,15 +55,16 @@ void GetDeviceSNService(const std::shared_ptr<dobot::srv::GetDeviceSN::Request> 
 }
 
 // 3 function
-void SetDeviceNameService(const std::shared_ptr<dobot::SetDeviceName::Request> req, 
-                                std::shared_ptr<dobot::SetDeviceName::Response> res)
+void SetDeviceNameService(const std::shared_ptr<dobot::srv::SetDeviceName::Request> req, 
+                                std::shared_ptr<dobot::srv::SetDeviceName::Response> res)
 {
     res.result = SetDeviceName(req.device_name.data.c_str());
 
     // return true;
 }
 
-bool GetDeviceNameService(dobot::GetDeviceName::Request &req, dobot::GetDeviceName::Response &res)
+// 4 function
+void GetDeviceNameService(dobot::GetDeviceName::Request &req, dobot::GetDeviceName::Response &res)
 {
     char deviceName[256];
 
@@ -74,7 +75,7 @@ bool GetDeviceNameService(dobot::GetDeviceName::Request &req, dobot::GetDeviceNa
         res.deviceName.data = ss.str();
     }
 
-    return true;
+    // return true;
 }
 
 bool GetDeviceVersionService(dobot::GetDeviceVersion::Request &req, dobot::GetDeviceVersion::Response &res)
