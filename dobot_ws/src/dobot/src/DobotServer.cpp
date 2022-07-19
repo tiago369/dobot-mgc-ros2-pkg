@@ -37,7 +37,8 @@ void InitCmdTimeoutServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> 
 #include "dobot/srv/set_device_name.hpp"
 // #include "dobot/GetDeviceName.h"
 #include "dobot/srv/get_device_dame.hpp"
-#include "dobot/GetDeviceVersion.h"
+// #include "dobot/GetDeviceVersion.h"
+#include "dobot/srv/get_device_version.hpp"
 
 // 2 function
 void GetDeviceSNService(const std::shared_ptr<dobot::srv::GetDeviceSN::Request> req, 
@@ -80,18 +81,20 @@ void GetDeviceNameService(const std::shared_ptr<dobot::srv::GetDeviceName::Reque
     // return true;
 }
 
-bool GetDeviceVersionService(dobot::GetDeviceVersion::Request &req, dobot::GetDeviceVersion::Response &res)
+// 5 function
+void GetDeviceVersionService(const std::shared_ptr<dobot::srv::GetDeviceVersion::Request> req, 
+                                    std::shared_ptr<dobot::srv::GetDeviceVersion::Response> res)
 {
-    uint8_t majorVersion, minorVersion, revision;
+    uint8_t major_version, minor_version, revision;
 
-    res.result = GetDeviceVersion(&majorVersion, &minorVersion, &revision);
+    res.result = GetDeviceVersion(&major_version, &minor_version, &revision);
     if (res.result == DobotCommunicate_NoError) {
-        res.majorVersion = majorVersion;
-        res.minorVersion = minorVersion;
+        res.major_version = major_version;
+        res.minor_version = minor_version;
         res.revision = revision;
     }
 
-    return true;
+    // return true;
 }
 
 void InitDeviceInfoServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverVec)

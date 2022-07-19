@@ -1,5 +1,5 @@
 ---
 int32 result
-uint8 majorVersion
-uint8 minorVersion
+uint8 major_version
+uint8 minor_version
 uint8 revision
