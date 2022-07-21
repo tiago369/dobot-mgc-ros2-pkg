@@ -46,7 +46,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetDeviceName.srv"
   "srv/GetDeviceName.srv"
   "srv/GetDeviceVersion.srv"
-
+  "srv/GetPose.srv"
+  
 )
 
 ## Generate messages in the 'msg' folder
@@ -61,7 +62,7 @@ set(srv_files
   # 
   # 
   # 
-  # "srv/GetPose.srv"
+  # 
   # "srv/GetAlarmsState.srv"
   # "srv/ClearAllAlarmsState.srv"
   # "srv/SetHOMEParams.srv"

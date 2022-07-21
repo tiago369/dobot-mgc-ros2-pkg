@@ -114,9 +114,13 @@ void InitDeviceInfoServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> 
 /*
  * Pose
  */
-#include "dobot/GetPose.h"
 
-bool GetPoseService(dobot::GetPose::Request &req, dobot::GetPose::Response &res)
+// 6 function
+// #include "dobot/GetPose.h"
+#include "dobot/srv/get_pose.hpp"
+
+void GetPoseService(const std::shared_ptr<dobot::GetPose::Request> req, 
+                          std::shared_ptr<dobot::GetPose::Response> res)
 {
     Pose pose;
 
@@ -127,11 +131,11 @@ bool GetPoseService(dobot::GetPose::Request &req, dobot::GetPose::Response &res)
         res.z = pose.z;
         res.r = pose.r;
         for (int i = 0; i < 4; i++) {
-            res.jointAngle.push_back(pose.jointAngle[i]);
+            res.joint_angle.push_back(pose.joint_angle[i]);
         }
     }
 
-    return true;
+    // return true;
 }
 
 void InitPoseServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverVec)
