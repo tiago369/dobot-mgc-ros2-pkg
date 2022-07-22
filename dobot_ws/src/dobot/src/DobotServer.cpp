@@ -194,7 +194,8 @@ void InitAlarmsServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &ser
  */
 // #include "dobot/SetHOMEParams.h"
 #include "dobot/srv/set_home_params.hpp"
-#include "dobot/GetHOMEParams.h"
+// #include "dobot/GetHOMEParams.h"
+#include "dobot/srv/get_home_params.hpp"
 #include "dobot/SetHOMECmd.h"
 
 // 9 function
@@ -217,7 +218,9 @@ void SetHOMEParamsService(const std::shared_ptr<dobot::srv::SetHOMEParams::Reque
     // return true;
 }
 
-bool GetHOMEParamsService(dobot::GetHOMEParams::Request &req, dobot::GetHOMEParams::Response &res)
+// 10 function
+void GetHOMEParamsService(const std::shared_ptr<dobot::srv::GetHOMEParams::Request> req, 
+                                std::shared_ptr<dobot::srv::GetHOMEParams::Response> res)
 {
     HOMEParams params;
 
@@ -229,7 +232,7 @@ bool GetHOMEParamsService(dobot::GetHOMEParams::Request &req, dobot::GetHOMEPara
         res.r = params.r;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetHOMECmdService(dobot::SetHOMECmd::Request &req, dobot::SetHOMECmd::Response &res)
