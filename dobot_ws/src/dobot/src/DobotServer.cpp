@@ -150,8 +150,9 @@ void InitPoseServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
  * Alarms
  */
 // #include "dobot/GetAlarmsState.h"
-#include "dobot/get_alarms_state.hpp"
-#include "dobot/ClearAllAlarmsState.h"
+#include "dobot/srv/get_alarms_state.hpp"
+// #include "dobot/ClearAllAlarmsState.h"
+#include "dobot/srv/clear_all_alarms_state.hpp"
 // 7 function
 void GetAlarmsStateService(const std::shared_ptr<dobot::srv::GetAlarmsState::Request> req, 
                                 std::shared_ptr<dobot::srv::GetAlarmsState::Response> res)
@@ -169,11 +170,13 @@ void GetAlarmsStateService(const std::shared_ptr<dobot::srv::GetAlarmsState::Req
     // return true;
 }
 
-bool ClearAllAlarmsStateService(dobot::ClearAllAlarmsState::Request &req, dobot::ClearAllAlarmsState::Response &res)
+// 8 function
+void ClearAllAlarmsStateService(const std::shared_ptr<dobot::srv::ClearAllAlarmsState::Request> req, 
+                                      std::shared_ptr<dobot::srv::ClearAllAlarmsState::Response> res)
 {
     res.result = ClearAllAlarmsState();
 
-    return true;
+    // return true;
 }
 
 void InitAlarmsServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverVec)
