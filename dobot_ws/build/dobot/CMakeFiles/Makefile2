@@ -580,7 +580,7 @@ CMakeFiles/dobot.dir/all: CMakeFiles/dobot__rosidl_typesupport_introspection_cpp
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dobot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 76
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 77
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dobot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 0
 .PHONY : CMakeFiles/dobot.dir/rule
@@ -602,12 +602,12 @@ CMakeFiles/dobot.dir/clean:
 CMakeFiles/dobot__rosidl_typesupport_cpp.dir/all: CMakeFiles/dobot__cpp.dir/all
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=36,37,38,39,40,41,42,43,44,45 "Built target dobot__rosidl_typesupport_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=36,37,38,39,40,41,42,43,44,45,46 "Built target dobot__rosidl_typesupport_cpp"
 .PHONY : CMakeFiles/dobot__rosidl_typesupport_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dobot__rosidl_typesupport_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dobot__rosidl_typesupport_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 0
 .PHONY : CMakeFiles/dobot__rosidl_typesupport_cpp.dir/rule
@@ -638,7 +638,7 @@ CMakeFiles/dobot__rosidl_typesupport_c__pyext.dir/all: dobot__py/CMakeFiles/dobo
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dobot__rosidl_typesupport_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 89
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 90
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dobot__rosidl_typesupport_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 0
 .PHONY : CMakeFiles/dobot__rosidl_typesupport_c__pyext.dir/rule
@@ -689,7 +689,7 @@ CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/dobot__rosid
 CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/dobot__cpp.dir/all
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/depend
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=46,47,48,49,50,51,52,53,54,55,56 "Built target dobot__rosidl_typesupport_fastrtps_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=47,48,49,50,51,52,53,54,55,56,57 "Built target dobot__rosidl_typesupport_fastrtps_c"
 .PHONY : CMakeFiles/dobot__rosidl_typesupport_fastrtps_c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -797,7 +797,7 @@ CMakeFiles/dobot__cpp.dir/clean:
 CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/all: CMakeFiles/dobot__cpp.dir/all
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/depend
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=82,83,84,85,86,87,88,89,90,91,92 "Built target dobot__rosidl_typesupport_introspection_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=83,84,85,86,87,88,89,90,91,92,93 "Built target dobot__rosidl_typesupport_introspection_cpp"
 .PHONY : CMakeFiles/dobot__rosidl_typesupport_introspection_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -832,7 +832,7 @@ CMakeFiles/dobot__python.dir/all: dobot__py/CMakeFiles/dobot__py.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dobot__python.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 87
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 88
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dobot__python.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 0
 .PHONY : CMakeFiles/dobot__python.dir/rule
@@ -859,12 +859,12 @@ CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/all: CMakeFiles/
 CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/all: dobot__py/CMakeFiles/dobot__py.dir/all
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/depend
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=81 "Built target dobot__rosidl_typesupport_introspection_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=81,82 "Built target dobot__rosidl_typesupport_introspection_c__pyext"
 .PHONY : CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 88
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 90
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 0
 .PHONY : CMakeFiles/dobot__rosidl_typesupport_introspection_c__pyext.dir/rule
@@ -892,7 +892,7 @@ CMakeFiles/dobot__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMakeFiles/dobot
 CMakeFiles/dobot__rosidl_typesupport_fastrtps_c__pyext.dir/all: dobot__py/CMakeFiles/dobot__py.dir/all
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_c__pyext.dir/depend
 	$(MAKE) -f CMakeFiles/dobot__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/dobot__rosidl_typesupport_fastrtps_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=57,58 "Built target dobot__rosidl_typesupport_fastrtps_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=58 "Built target dobot__rosidl_typesupport_fastrtps_c__pyext"
 .PHONY : CMakeFiles/dobot__rosidl_typesupport_fastrtps_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
@@ -925,7 +925,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtes
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/rule
@@ -947,12 +947,12 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=93,94 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles --progress-num=94 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 gtest/googlemock/CMakeFiles/gmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 0
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/rule
@@ -1033,7 +1033,7 @@ dobot__py/CMakeFiles/dobot__py.dir/all: CMakeFiles/dobot.dir/all
 
 # Build rule for subdir invocation for target.
 dobot__py/CMakeFiles/dobot__py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 77
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 78
 	$(MAKE) -f CMakeFiles/Makefile2 dobot__py/CMakeFiles/dobot__py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/build/dobot/CMakeFiles 0
 .PHONY : dobot__py/CMakeFiles/dobot__py.dir/rule

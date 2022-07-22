@@ -51,6 +51,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ClearAllAlarmsState.srv"
   "srv/SetHOMEParams.srv"
   "srv/GetHOMEParams.srv"
+  "srv/SetHOMECmd.srv"
 )
 
 ## Generate messages in the 'msg' folder
@@ -60,17 +61,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 ## Generate services in the 'srv' folder
 set(srv_files
-  # 
-
-  # 
-  # 
-  # 
-  # 
-  # 
-  # 
-  # 
-  # 
-  # "srv/SetHOMECmd.srv"
   # "srv/SetEndEffectorParams.srv"
   # "srv/GetEndEffectorParams.srv"
   # "srv/SetEndEffectorLaser.srv"
