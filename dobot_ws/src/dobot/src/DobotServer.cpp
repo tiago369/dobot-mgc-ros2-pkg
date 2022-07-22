@@ -192,26 +192,29 @@ void InitAlarmsServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &ser
 /*
  * HOME
  */
-#include "dobot/SetHOMEParams.h"
+// #include "dobot/SetHOMEParams.h"
+#include "dobot/srv/set_home_params.hpp"
 #include "dobot/GetHOMEParams.h"
 #include "dobot/SetHOMECmd.h"
 
-bool SetHOMEParamsService(dobot::SetHOMEParams::Request &req, dobot::SetHOMEParams::Response &res)
+// 9 function
+void SetHOMEParamsService(const std::shared_ptr<dobot::srv::SetHOMEParams::Request> req, 
+                                std::shared_ptr<dobot::srv::SetHOMEParams::Response> res)
 {
     HOMEParams params;
-    uint64_t queuedCmdIndex;
+    uint64_t queued_cmd_index;
 
     params.x = req.x;
     params.y = req.y;
     params.z = req.z;
     params.r = req.r;
 
-    res.result = SetHOMEParams(&params, req.isQueued, &queuedCmdIndex);
+    res.result = SetHOMEParams(&params, req.is_queued, &queued_cmd_index);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queued_cmd_index;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetHOMEParamsService(dobot::GetHOMEParams::Request &req, dobot::GetHOMEParams::Response &res)

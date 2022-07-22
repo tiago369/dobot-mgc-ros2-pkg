@@ -49,6 +49,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetPose.srv"
   "srv/GetAlarmsState.srv"
   "srv/ClearAllAlarmsState.srv"
+  "srv/SetHOMEParams.srv"
 )
 
 ## Generate messages in the 'msg' folder
@@ -66,7 +67,7 @@ set(srv_files
   # 
   # 
   # 
-  # "srv/SetHOMEParams.srv"
+  # 
   # "srv/GetHOMEParams.srv"
   # "srv/SetHOMECmd.srv"
   # "srv/SetEndEffectorParams.srv"

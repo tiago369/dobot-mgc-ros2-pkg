@@ -24,7 +24,9 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_version__functions.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_pose__type_support.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/clear_all_alarms_state__struct.h
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__functions.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_name__functions.c
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__type_support.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_sn__functions.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_version__type_support.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_cmd_timeout__functions.c
@@ -38,12 +40,15 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_name__struct.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_device_name__type_support.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_sn__type_support.h
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__functions.h
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__struct.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_alarms_state__functions.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_version__functions.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_name__type_support.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/get_device_version.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/clear_all_alarms_state.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/get_device_sn.h
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/set_home_params.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/get_pose.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/set_cmd_timeout.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/get_alarms_state.h
@@ -59,6 +64,7 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_alarms_state__rosidl_typesupport_fastrtps_c.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_pose__rosidl_typesupport_fastrtps_c.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_version__rosidl_typesupport_fastrtps_c.h
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__rosidl_typesupport_fastrtps_c.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_name__rosidl_typesupport_fastrtps_c.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_device_name__rosidl_typesupport_fastrtps_c.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/libdobot__rosidl_typesupport_fastrtps_c.so
@@ -66,6 +72,7 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_cmd_timeout__rosidl_typesupport_fastrtps_cpp.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_version__rosidl_typesupport_fastrtps_cpp.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_device_name__rosidl_typesupport_fastrtps_cpp.hpp
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__rosidl_typesupport_fastrtps_cpp.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_pose__rosidl_typesupport_fastrtps_cpp.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_sn__rosidl_typesupport_fastrtps_cpp.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/clear_all_alarms_state__rosidl_typesupport_fastrtps_cpp.hpp
@@ -85,7 +92,9 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_cmd_timeout__type_support.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_version__rosidl_typesupport_introspection_c.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_alarms_state__type_support.c
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__type_support.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_device_name__rosidl_typesupport_introspection_c.h
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__rosidl_typesupport_introspection_c.h
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_name__type_support.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_version__type_support.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_pose__rosidl_typesupport_introspection_c.h
@@ -94,6 +103,7 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_alarms_state__traits.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_cmd_timeout__traits.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_cmd_timeout__struct.hpp
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__traits.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_pose__traits.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_version__traits.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_alarms_state__builder.hpp
@@ -114,6 +124,8 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_pose__builder.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/clear_all_alarms_state__traits.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_device_name__struct.hpp
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__struct.hpp
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__builder.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_sn__builder.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/get_alarms_state.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/set_cmd_timeout.hpp
@@ -121,6 +133,7 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/get_pose.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/get_device_name.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/set_device_name.hpp
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/set_home_params.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/get_device_version.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/clear_all_alarms_state.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_version__rosidl_typesupport_introspection_cpp.hpp
@@ -132,8 +145,10 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/clear_all_alarms_state__rosidl_typesupport_introspection_cpp.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_cmd_timeout__rosidl_typesupport_introspection_cpp.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/clear_all_alarms_state__type_support.cpp
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__rosidl_typesupport_introspection_cpp.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_pose__rosidl_typesupport_introspection_cpp.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_version__type_support.cpp
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_home_params__type_support.cpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_cmd_timeout__type_support.cpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/get_device_name__rosidl_typesupport_introspection_cpp.hpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/include/dobot/srv/detail/set_device_name__type_support.cpp
@@ -144,6 +159,7 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/environment/pythonpath.sh
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/environment/pythonpath.dsv
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/__init__.py
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_set_home_params_s.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_get_device_version_s.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_clear_all_alarms_state_s.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_get_device_version.py
@@ -156,6 +172,7 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_set_cmd_timeout_s.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_get_device_name.py
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_get_device_name_s.c
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_set_home_params.py
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_get_pose_s.c
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_set_cmd_timeout.py
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/lib/python3/dist-packages/dobot/srv/_clear_all_alarms_state.py
@@ -173,6 +190,7 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/GetPose.idl
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/GetAlarmsState.idl
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/ClearAllAlarmsState.idl
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/SetHOMEParams.idl
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/SetCmdTimeout.srv
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/SetCmdTimeout_Request.msg
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/SetCmdTimeout_Response.msg
@@ -197,6 +215,9 @@
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/ClearAllAlarmsState.srv
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/ClearAllAlarmsState_Request.msg
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/ClearAllAlarmsState_Response.msg
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/SetHOMEParams.srv
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/SetHOMEParams_Request.msg
+/home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/share/dobot/srv/SetHOMEParams_Response.msg
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotServer.cpp
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libicudata.so.53.1
 /home/senai/tiago-projects/dobot-mgc-ros2-pkg/dobot_ws/install/dobot/DobotDll_x86/DobotDll_x86/libDobotDll.so
