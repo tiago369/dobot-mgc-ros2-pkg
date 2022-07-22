@@ -47,6 +47,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetDeviceName.srv"
   "srv/GetDeviceVersion.srv"
   "srv/GetPose.srv"
+  "srv/GetAlarmsState.srv"
   
 )
 
@@ -63,7 +64,7 @@ set(srv_files
   # 
   # 
   # 
-  # "srv/GetAlarmsState.srv"
+  # 
   # "srv/ClearAllAlarmsState.srv"
   # "srv/SetHOMEParams.srv"
   # "srv/GetHOMEParams.srv"
