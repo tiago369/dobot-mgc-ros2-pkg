@@ -627,7 +627,9 @@ void SetPTPJointParamsService(const std::shared_ptr<dobot::srv::SetPTPJointParam
     // return true;
 }
 
-bool GetPTPJointParamsService(dobot::GetPTPJointParams::Request &req, dobot::GetPTPJointParams::Response &res)
+// 28 function 
+void GetPTPJointParamsService(const std::shared_ptr<dobot::srv::GetPTPJointParams::Request> req, 
+                                    std::shared_ptr<dobot::srv::GetPTPJointParams::Response> res)
 {
     PTPJointParams params;
 
@@ -639,7 +641,7 @@ bool GetPTPJointParamsService(dobot::GetPTPJointParams::Request &req, dobot::Get
         }
     }
 
-    return true;
+    // return true;
 }
 
 bool SetPTPCoordinateParamsService(dobot::SetPTPCoordinateParams::Request &req, dobot::SetPTPCoordinateParams::Response &res)
