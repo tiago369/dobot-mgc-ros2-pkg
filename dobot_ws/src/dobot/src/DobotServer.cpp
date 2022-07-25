@@ -593,8 +593,10 @@ void InitJOGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 /*
  * PTP
  */
-#include "dobot/SetPTPJointParams.h"
-#include "dobot/GetPTPJointParams.h"
+// #include "dobot/SetPTPJointParams.h"
+#include "dobot/srv/set_ptp_joint_params.hpp"
+// #include "dobot/GetPTPJointParams.h"
+#include "dobot/srv/get_ptp_joint_params.hpp"
 #include "dobot/SetPTPCoordinateParams.h"
 #include "dobot/GetPTPCoordinateParams.h"
 #include "dobot/SetPTPJumpParams.h"
@@ -603,7 +605,10 @@ void InitJOGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 #include "dobot/GetPTPCommonParams.h"
 #include "dobot/SetPTPCmd.h"
 
-bool SetPTPJointParamsService(dobot::SetPTPJointParams::Request &req, dobot::SetPTPJointParams::Response &res)
+
+// 27 function 
+void SetPTPJointParamsService(const std::shared_ptr<dobot::srv::SetPTPJointParams::Request> req, 
+                                    std::shared_ptr<dobot::srv::SetPTPJointParams::Response> res)
 {
     PTPJointParams params;
     uint64_t queuedCmdIndex;
@@ -614,12 +619,12 @@ bool SetPTPJointParamsService(dobot::SetPTPJointParams::Request &req, dobot::Set
     for (int i = 0; i < req.acceleration.size(); i++) {
         params.acceleration[i] = req.acceleration[i];
     }
-    res.result = SetPTPJointParams(&params, req.isQueued, &queuedCmdIndex);
+    res.result = SetPTPJointParams(&params, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetPTPJointParamsService(dobot::GetPTPJointParams::Request &req, dobot::GetPTPJointParams::Response &res)
