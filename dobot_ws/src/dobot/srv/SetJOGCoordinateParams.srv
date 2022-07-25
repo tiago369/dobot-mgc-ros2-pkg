@@ -1,6 +1,6 @@
 float32[] velocity
 float32[] acceleration
-bool isQueued
+bool is_queued
 ---
 int32 result
-uint64 queuedCmdIndex
+uint64 queued_cmd_index

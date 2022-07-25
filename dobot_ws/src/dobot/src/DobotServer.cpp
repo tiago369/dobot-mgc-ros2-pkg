@@ -433,15 +433,16 @@ void InitEndEffectorServices(ros::NodeHandle &n, std::vector<ros::ServiceServer>
 // #include "dobot/SetJOGJointParams.h"
 #include "dobot/srv/set_jog_joint_params.hpp"
 // #include "dobot/GetJOGJointParams.h"
-#include "dobot/srv/get_jog_joint_params.h"
-#include "dobot/SetJOGCoordinateParams.h"
+#include "dobot/srv/get_jog_joint_params.hpp"
+// #include "dobot/SetJOGCoordinateParams.h"
+#include "dobot/srv/set_jog_coordinate_params.hpp"
 #include "dobot/GetJOGCoordinateParams.h"
 #include "dobot/SetJOGCommonParams.h"
 #include "dobot/GetJOGCommonParams.h"
 #include "dobot/SetJOGCmd.h"
 
 // 20 function 
-void SetJOGJointParamsService(const std::shared_ptr<dobot::srv::SetJOGJointParams::Request> &req, 
+void SetJOGJointParamsService(const std::shared_ptr<dobot::srv::SetJOGJointParams::Request> req, 
                                     std::shared_ptr<dobot::srv::SetJOGJointParams::Response> res)
 {
     JOGJointParams params;
@@ -478,7 +479,9 @@ void GetJOGJointParamsService(const std::shared_ptr<dobot::srv::GetJOGJointParam
     // return true;
 }
 
-bool SetJOGCoordinateParamsService(dobot::SetJOGCoordinateParams::Request &req, dobot::SetJOGCoordinateParams::Response &res)
+// 22 function
+void SetJOGCoordinateParamsService(const std::shared_ptr<dobot::srv::SetJOGCoordinateParams::Request> req, 
+                                         std::shared_ptr<dobot::srv::SetJOGCoordinateParams::Response> res)
 {
     JOGCoordinateParams params;
     uint64_t queuedCmdIndex;
@@ -489,12 +492,12 @@ bool SetJOGCoordinateParamsService(dobot::SetJOGCoordinateParams::Request &req, 
     for (int i = 0; i < req.acceleration.size(); i++) {
         params.acceleration[i] = req.acceleration[i];
     }
-    res.result = SetJOGCoordinateParams(&params, req.isQueued, &queuedCmdIndex);
+    res.result = SetJOGCoordinateParams(&params, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetJOGCoordinateParamsService(dobot::GetJOGCoordinateParams::Request &req, dobot::GetJOGCoordinateParams::Response &res)
