@@ -64,6 +64,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetJOGJointParams.srv"
   "srv/SetJOGCoordinateParams.srv"
   "srv/GetJOGCoordinateParams.srv"
+  "srv/SetJOGCommonParams.srv"
 )
 
 ## Generate messages in the 'msg' folder
@@ -76,7 +77,7 @@ set(srv_files
 
   # 
   # 
-  # "srv/SetJOGCommonParams.srv"
+  # 
   # "srv/GetJOGCommonParams.srv"
   # "srv/SetJOGCmd.srv"
   # "srv/SetPTPJointParams.srv"

@@ -438,7 +438,8 @@ void InitEndEffectorServices(ros::NodeHandle &n, std::vector<ros::ServiceServer>
 #include "dobot/srv/set_jog_coordinate_params.hpp"
 // #include "dobot/GetJOGCoordinateParams.h"
 #include "dobot/srv/get_jog_coordinate_params.hpp"
-#include "dobot/SetJOGCommonParams.h"
+// #include "dobot/SetJOGCommonParams.h"
+#include "dobot/srv/set_jog_common_params.hpp"
 #include "dobot/GetJOGCommonParams.h"
 #include "dobot/SetJOGCmd.h"
 
@@ -518,19 +519,21 @@ void GetJOGCoordinateParamsService(const std::shared_ptr<dobot::srv::GetJOGCoord
     // return true;
 }
 
-bool SetJOGCommonParamsService(dobot::SetJOGCommonParams::Request &req, dobot::SetJOGCommonParams::Response &res)
+// 24 function
+void SetJOGCommonParamsService(const std::shared_ptr<dobot::srv::SetJOGCommonParams::Request> req, 
+                                     std::shared_ptr<dobot::srv::SetJOGCommonParams::Response> res)
 {
     JOGCommonParams params;
     uint64_t queuedCmdIndex;
 
-    params.velocityRatio = req.velocityRatio;
-    params.accelerationRatio = req.accelerationRatio;
-    res.result = SetJOGCommonParams(&params, req.isQueued, &queuedCmdIndex);
+    params.velocityRatio = req.velocity_ratio;
+    params.accelerationRatio = req.acceleration_ratio;
+    res.result = SetJOGCommonParams(&params, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetJOGCommonParamsService(dobot::GetJOGCommonParams::Request &req, dobot::GetJOGCommonParams::Response &res)

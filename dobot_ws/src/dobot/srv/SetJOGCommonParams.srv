@@ -1,6 +1,6 @@
-float32 velocityRatio
-float32 accelerationRatio
-bool isQueued
+float32 velocity_ratio
+float32 acceleration_ratio
+bool is_queued
 ---
 int32 result
-uint64 queuedCmdIndex
+uint64 queued_cmd_index
