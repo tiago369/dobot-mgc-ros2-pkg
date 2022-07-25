@@ -273,7 +273,7 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 // #include "dobot/SetEndEffectorLaser.h"
 #include "dobot/srv/set_end_effector_laser.hpp"
 // #include "dobot/GetEndEffectorLaser.h"
-#include "dobot/GetEndEffectorLaser.h"
+#include "dobot/srv/get_end_effector_laser.h"
 #include "dobot/SetEndEffectorSuctionCup.h"
 #include "dobot/GetEndEffectorSuctionCup.h"
 #include "dobot/SetEndEffectorGripper.h"
