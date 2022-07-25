@@ -1,6 +1,6 @@
-uint8 enableCtrl
+uint8 enable_ctrl
 uint8 on
-bool isQueued
+bool is_queued
 ---
 int32 result
-uint64 queuedCmdIndex
+uint64 queued_cmd_index
