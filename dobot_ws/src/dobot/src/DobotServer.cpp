@@ -432,7 +432,8 @@ void InitEndEffectorServices(ros::NodeHandle &n, std::vector<ros::ServiceServer>
  */
 // #include "dobot/SetJOGJointParams.h"
 #include "dobot/srv/set_jog_joint_params.hpp"
-#include "dobot/GetJOGJointParams.h"
+// #include "dobot/GetJOGJointParams.h"
+#include "dobot/srv/get_jog_joint_params.h"
 #include "dobot/SetJOGCoordinateParams.h"
 #include "dobot/GetJOGCoordinateParams.h"
 #include "dobot/SetJOGCommonParams.h"
@@ -460,7 +461,9 @@ void SetJOGJointParamsService(const std::shared_ptr<dobot::srv::SetJOGJointParam
     // return true;
 }
 
-bool GetJOGJointParamsService(dobot::GetJOGJointParams::Request &req, dobot::GetJOGJointParams::Response &res)
+// 21 function
+void GetJOGJointParamsService(const std::shared_ptr<dobot::srv::GetJOGJointParams::Request> req, 
+                                    std::shared_ptr<dobot::srv::GetJOGJointParams::Response> res)
 {
     JOGJointParams params;
 
@@ -472,7 +475,7 @@ bool GetJOGJointParamsService(dobot::GetJOGJointParams::Request &req, dobot::Get
         }
     }
 
-    return true;
+    // return true;
 }
 
 bool SetJOGCoordinateParamsService(dobot::SetJOGCoordinateParams::Request &req, dobot::SetJOGCoordinateParams::Response &res)
