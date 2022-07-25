@@ -272,6 +272,7 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 #include "dobot/srv/get_end_effector_params.hpp"
 // #include "dobot/SetEndEffectorLaser.h"
 #include "dobot/srv/set_end_effector_laser.hpp"
+// #include "dobot/GetEndEffectorLaser.h"
 #include "dobot/GetEndEffectorLaser.h"
 #include "dobot/SetEndEffectorSuctionCup.h"
 #include "dobot/GetEndEffectorSuctionCup.h"
@@ -327,7 +328,8 @@ void SetEndEffectorLaserService(const std::shared_ptr<dobot::srv::SetEndEffector
     // return true;
 }
 
-bool GetEndEffectorLaserService(dobot::GetEndEffectorLaser::Request &req, dobot::GetEndEffectorLaser::Response &res)
+// 15 function
+void GetEndEffectorLaserService(dobot::GetEndEffectorLaser::Request &req, dobot::GetEndEffectorLaser::Response &res)
 {
     bool enableCtrl, on;
 
@@ -337,7 +339,7 @@ bool GetEndEffectorLaserService(dobot::GetEndEffectorLaser::Request &req, dobot:
         res.on = on;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetEndEffectorSuctionCupService(dobot::SetEndEffectorSuctionCup::Request &req, dobot::SetEndEffectorSuctionCup::Response &res)
