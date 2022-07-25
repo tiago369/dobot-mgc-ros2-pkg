@@ -56,6 +56,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetEndEffectorParams.srv"
   "srv/SetEndEffectorLaser.srv"
   "srv/GetEndEffectorLaser.srv"
+  "srv/SetEndEffectorSuctionCup.srv"
 )
 
 ## Generate messages in the 'msg' folder

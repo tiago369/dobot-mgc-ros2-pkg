@@ -274,7 +274,8 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 #include "dobot/srv/set_end_effector_laser.hpp"
 // #include "dobot/GetEndEffectorLaser.h"
 #include "dobot/srv/get_end_effector_laser.h"
-#include "dobot/SetEndEffectorSuctionCup.h"
+// #include "dobot/SetEndEffectorSuctionCup.h"
+#include "dobot/srv/set_end_effector_suction_cup.hpp"
 #include "dobot/GetEndEffectorSuctionCup.h"
 #include "dobot/SetEndEffectorGripper.h"
 #include "dobot/GetEndEffectorGripper.h"
@@ -343,17 +344,18 @@ void GetEndEffectorLaserService(const std::shared_ptr<dobot::srv::GetEndEffector
     // return true;
 }
 
-
-void SetEndEffectorSuctionCupService(dobot::SetEndEffectorSuctionCup::Request &req, dobot::SetEndEffectorSuctionCup::Response &res)
+// 16 function  
+void SetEndEffectorSuctionCupService(const std::shared_ptr<dobot::srv::SetEndEffectorSuctionCup::Request> req, 
+                                           std::shared_ptr<dobot::srv::SetEndEffectorSuctionCup::Response> res)
 {
     uint64_t queuedCmdIndex;
 
-    res.result = SetEndEffectorSuctionCup(req.enableCtrl, req.suck, req.isQueued, &queuedCmdIndex);
+    res.result = SetEndEffectorSuctionCup(req.enable_ctrl, req.suck, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetEndEffectorSuctionCupService(dobot::GetEndEffectorSuctionCup::Request &req, dobot::GetEndEffectorSuctionCup::Response &res)
