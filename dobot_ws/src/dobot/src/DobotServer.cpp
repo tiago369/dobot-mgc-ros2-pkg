@@ -268,7 +268,8 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
  */
 // #include "dobot/SetEndEffectorParams.h"
 #include "dobot/srv/set_end_effector_params.hpp"
-#include "dobot/GetEndEffectorParams.h"
+// #include "dobot/GetEndEffectorParams.h"
+#include "dobot/srv/get_end_effector_params.hpp"
 #include "dobot/SetEndEffectorLaser.h"
 #include "dobot/GetEndEffectorLaser.h"
 #include "dobot/SetEndEffectorSuctionCup.h"
@@ -277,8 +278,8 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 #include "dobot/GetEndEffectorGripper.h"
 
 // 12 function
-void SetEndEffectorParamsService(const std::shared_ptr<dobot::SetEndEffectorParams::Request> req,
-                                        std::shared_ptr<dobot::SetEndEffectorParams::Response> res)
+void SetEndEffectorParamsService(const std::shared_ptr<dobot::srv::SetEndEffectorParams::Request> req,
+                                        std::shared_ptr<dobot::srv::SetEndEffectorParams::Response> res)
 {
     EndEffectorParams params;
     uint64_t queued_cmd_index;
@@ -295,18 +296,20 @@ void SetEndEffectorParamsService(const std::shared_ptr<dobot::SetEndEffectorPara
     // return true;
 }
 
-bool GetEndEffectorParamsService(dobot::GetEndEffectorParams::Request &req, dobot::GetEndEffectorParams::Response &res)
+//13 function
+void GetEndEffectorParamsService(const std::shared_ptr<dobot::srv::GetEndEffectorParams::Request> req,
+                                        std::shared_ptr<dobot::srv::GetEndEffectorParams::Response> res)
 {
     EndEffectorParams params;
 
     res.result = GetEndEffectorParams(&params);
     if (res.result == DobotCommunicate_NoError) {
-        res.xBias = params.xBias;
-        res.yBias = params.yBias;
-        res.zBias = params.zBias;
+        res.x_bias = params.xBias;
+        res.y_bias = params.yBias;
+        res.z_bias = params.zBias;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetEndEffectorLaserService(dobot::SetEndEffectorLaser::Request &req, dobot::SetEndEffectorLaser::Response &res)
