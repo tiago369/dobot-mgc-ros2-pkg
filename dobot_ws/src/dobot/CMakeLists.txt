@@ -58,6 +58,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetEndEffectorLaser.srv"
   "srv/SetEndEffectorSuctionCup.srv"
   "srv/GetEndEffectorSuctionCup.srv"
+  "srv/SetEndEffectorGripper.srv"
 )
 
 ## Generate messages in the 'msg' folder
@@ -73,7 +74,7 @@ set(srv_files
   # 
   # 
   # 
-  # "srv/SetEndEffectorGripper.srv"
+  # 
   # "srv/GetEndEffectorGripper.srv"
   # "srv/SetJOGJointParams.srv"
   # "srv/GetJOGJointParams.srv"

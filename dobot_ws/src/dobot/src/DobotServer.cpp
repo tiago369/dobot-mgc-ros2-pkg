@@ -278,7 +278,8 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 #include "dobot/srv/set_end_effector_suction_cup.hpp"
 // #include "dobot/GetEndEffectorSuctionCup.h"
 #include "dobot/srv/get_end_effector_suction_cup.hpp"
-#include "dobot/SetEndEffectorGripper.h"
+// #include "dobot/SetEndEffectorGripper.h"
+#include "dobot/srv/set_end_effector_gripper.hpp"
 #include "dobot/GetEndEffectorGripper.h"
 
 // 12 function
@@ -374,16 +375,18 @@ void GetEndEffectorSuctionCupService(const std::shared_ptr<dobot::srv::GetEndEff
     // return true;
 }
 
-bool SetEndEffectorGripperService(dobot::SetEndEffectorGripper::Request &req, dobot::SetEndEffectorGripper::Response &res)
+// 18 function
+void SetEndEffectorGripperService(const std::shared_ptr<dobot::srv::SetEndEffectorGripper::Request> req, 
+                                        std::shared_ptr<dobot::srv::SetEndEffectorGripper::Response> res)
 {
     uint64_t queuedCmdIndex;
 
-    res.result = SetEndEffectorGripper(req.enableCtrl, req.grip, req.isQueued, &queuedCmdIndex);
+    res.result = SetEndEffectorGripper(req.enable_ctrl, req.grip, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetEndEffectorGripperService(dobot::GetEndEffectorGripper::Request &req, dobot::GetEndEffectorGripper::Response &res)
