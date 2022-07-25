@@ -440,7 +440,8 @@ void InitEndEffectorServices(ros::NodeHandle &n, std::vector<ros::ServiceServer>
 #include "dobot/srv/get_jog_coordinate_params.hpp"
 // #include "dobot/SetJOGCommonParams.h"
 #include "dobot/srv/set_jog_common_params.hpp"
-#include "dobot/GetJOGCommonParams.h"
+// #include "dobot/GetJOGCommonParams.h"
+#include "dobot/srv/get_jog_common_params.hpp"
 #include "dobot/SetJOGCmd.h"
 
 // 20 function 
@@ -536,17 +537,19 @@ void SetJOGCommonParamsService(const std::shared_ptr<dobot::srv::SetJOGCommonPar
     // return true;
 }
 
-bool GetJOGCommonParamsService(dobot::GetJOGCommonParams::Request &req, dobot::GetJOGCommonParams::Response &res)
+// 25 function
+void GetJOGCommonParamsService(const std::shared_ptr<dobot::srv::GetJOGCommonParams::Request> req, 
+                                     std::shared_ptr<dobot::srv::GetJOGCommonParams::Response> res)
 {
     JOGCommonParams params;
 
     res.result = GetJOGCommonParams(&params);
     if (res.result == DobotCommunicate_NoError) {
-        res.velocityRatio = params.velocityRatio;
-        res.accelerationRatio = params.accelerationRatio;
+        res.velocity_ratio = params.velocityRatio;
+        res.acceleration_ratio = params.accelerationRatio;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetJOGCmdService(dobot::SetJOGCmd::Request &req, dobot::SetJOGCmd::Response &res)

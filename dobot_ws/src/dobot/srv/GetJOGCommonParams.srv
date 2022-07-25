@@ -1,4 +1,4 @@
 ---
 int32 result
-float32 velocityRatio
-float32 accelerationRatio
+float32 velocity_ratio
+float32 acceleration_ratio
