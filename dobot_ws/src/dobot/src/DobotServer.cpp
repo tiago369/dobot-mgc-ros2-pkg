@@ -266,7 +266,8 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 /*
  * End effector
  */
-#include "dobot/SetEndEffectorParams.h"
+// #include "dobot/SetEndEffectorParams.h"
+#include "dobot/srv/set_end_effector_params.hpp"
 #include "dobot/GetEndEffectorParams.h"
 #include "dobot/SetEndEffectorLaser.h"
 #include "dobot/GetEndEffectorLaser.h"
@@ -275,21 +276,23 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 #include "dobot/SetEndEffectorGripper.h"
 #include "dobot/GetEndEffectorGripper.h"
 
-bool SetEndEffectorParamsService(dobot::SetEndEffectorParams::Request &req, dobot::SetEndEffectorParams::Response &res)
+// 12 function
+void SetEndEffectorParamsService(const std::shared_ptr<dobot::SetEndEffectorParams::Request> req,
+                                        std::shared_ptr<dobot::SetEndEffectorParams::Response> res)
 {
     EndEffectorParams params;
-    uint64_t queuedCmdIndex;
+    uint64_t queued_cmd_index;
 
-    params.xBias = req.xBias;
-    params.yBias = req.yBias;
-    params.zBias = req.zBias;
+    params.x_bias = req.x_bias;
+    params.y_bias = req.y_bias;
+    params.z_bias = req.z_bias;
 
-    res.result = SetEndEffectorParams(&params, req.isQueued, &queuedCmdIndex);
+    res.result = SetEndEffectorParams(&params, req.is_queued, &queued_cmd_index);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queued_cmd_index;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetEndEffectorParamsService(dobot::GetEndEffectorParams::Request &req, dobot::GetEndEffectorParams::Response &res)

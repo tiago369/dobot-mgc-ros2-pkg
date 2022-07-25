@@ -197,7 +197,7 @@ void InitAlarmsServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &ser
 // #include "dobot/GetHOMEParams.h"
 #include "dobot/srv/get_home_params.hpp"
 // #include "dobot/SetHOMECmd.h"
-#include "dobot/srv/set_home_cmd.h"
+#include "dobot/srv/set_home_cmd.hpp"
 
 // 9 function
 void SetHOMEParamsService(const std::shared_ptr<dobot::srv::SetHOMEParams::Request> req, 
@@ -266,7 +266,8 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 /*
  * End effector
  */
-#include "dobot/SetEndEffectorParams.h"
+// #include "dobot/SetEndEffectorParams.h"
+#include "dobot/srv/set_end_effector_params.hpp"
 #include "dobot/GetEndEffectorParams.h"
 #include "dobot/SetEndEffectorLaser.h"
 #include "dobot/GetEndEffectorLaser.h"
@@ -275,7 +276,7 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 #include "dobot/SetEndEffectorGripper.h"
 #include "dobot/GetEndEffectorGripper.h"
 
-bool SetEndEffectorParamsService(dobot::SetEndEffectorParams::Request &req, dobot::SetEndEffectorParams::Response &res)
+void SetEndEffectorParamsService(dobot::SetEndEffectorParams::Request &req, dobot::SetEndEffectorParams::Response &res)
 {
     EndEffectorParams params;
     uint64_t queuedCmdIndex;
