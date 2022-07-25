@@ -597,7 +597,8 @@ void InitJOGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 #include "dobot/srv/set_ptp_joint_params.hpp"
 // #include "dobot/GetPTPJointParams.h"
 #include "dobot/srv/get_ptp_joint_params.hpp"
-#include "dobot/SetPTPCoordinateParams.h"
+// #include "dobot/SetPTPCoordinateParams.h"
+#include "dobot/srv/set_ptp_coordinate_params.hpp"
 #include "dobot/GetPTPCoordinateParams.h"
 #include "dobot/SetPTPJumpParams.h"
 #include "dobot/GetPTPJumpParams.h"
@@ -644,21 +645,23 @@ void GetPTPJointParamsService(const std::shared_ptr<dobot::srv::GetPTPJointParam
     // return true;
 }
 
-bool SetPTPCoordinateParamsService(dobot::SetPTPCoordinateParams::Request &req, dobot::SetPTPCoordinateParams::Response &res)
+// 29 function 
+void SetPTPCoordinateParamsService(const std::shared_ptr<dobot::srv::SetPTPCoordinateParams::Request> req, 
+                                         std::shared_ptr<dobot::srv::SetPTPCoordinateParams::Response> res)
 {
     PTPCoordinateParams params;
     uint64_t queuedCmdIndex;
 
-    params.xyzVelocity = req.xyzVelocity;
-    params.rVelocity = req.rVelocity;
-    params.xyzAcceleration = req.xyzAcceleration;
-    params.rAcceleration = req.rAcceleration;
-    res.result = SetPTPCoordinateParams(&params, req.isQueued, &queuedCmdIndex);
+    params.xyzVelocity = req.xyz_velocity;
+    params.rVelocity = req.r_velocity;
+    params.xyzAcceleration = req.xyz_acceleration;
+    params.rAcceleration = req.r_acceleration;
+    res.result = SetPTPCoordinateParams(&params, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetPTPCoordinateParamsService(dobot::GetPTPCoordinateParams::Request &req, dobot::GetPTPCoordinateParams::Response &res)
