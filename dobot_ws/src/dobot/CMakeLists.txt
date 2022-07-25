@@ -70,6 +70,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetPTPJointParams.srv"
   "srv/GetPTPJointParams.srv"
   "srv/SetPTPCoordinateParams.srv"
+  "srv/GetPTPCoordinateParams.srv"
 )
 
 ## Generate messages in the 'msg' folder
@@ -82,7 +83,7 @@ set(srv_files
 
   # 
   # 
-  # "srv/GetPTPCoordinateParams.srv"
+  # 
   # "srv/SetPTPJumpParams.srv"
   # "srv/GetPTPJumpParams.srv"
   # "srv/SetPTPCommonParams.srv"

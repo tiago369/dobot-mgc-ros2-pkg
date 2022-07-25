@@ -599,7 +599,8 @@ void InitJOGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 #include "dobot/srv/get_ptp_joint_params.hpp"
 // #include "dobot/SetPTPCoordinateParams.h"
 #include "dobot/srv/set_ptp_coordinate_params.hpp"
-#include "dobot/GetPTPCoordinateParams.h"
+// #include "dobot/GetPTPCoordinateParams.h"
+#include "dobot/srv/get_ptp_coordinate_params.hpp"
 #include "dobot/SetPTPJumpParams.h"
 #include "dobot/GetPTPJumpParams.h"
 #include "dobot/SetPTPCommonParams.h"
@@ -664,19 +665,21 @@ void SetPTPCoordinateParamsService(const std::shared_ptr<dobot::srv::SetPTPCoord
     // return true;
 }
 
-bool GetPTPCoordinateParamsService(dobot::GetPTPCoordinateParams::Request &req, dobot::GetPTPCoordinateParams::Response &res)
+// 30 function
+void GetPTPCoordinateParamsService(const std::shared_ptr<dobot::srv::GetPTPCoordinateParams::Request> req, 
+                                         std::shared_ptr<dobot::srv::GetPTPCoordinateParams::Response> res)
 {
     PTPCoordinateParams params;
 
     res.result = GetPTPCoordinateParams(&params);
     if (res.result == DobotCommunicate_NoError) {
-        res.xyzVelocity = params.xyzVelocity;
-        res.rVelocity = params.rVelocity;
-        res.xyzAcceleration = params.xyzAcceleration;
-        res.rAcceleration = params.rAcceleration;
+        res.xyz_velocity = params.xyzVelocity;
+        res.r_velocity = params.rVelocity;
+        res.xyz_acceleration = params.xyzAcceleration;
+        res.r_acceleration = params.rAcceleration;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetPTPJumpParamsService(dobot::SetPTPJumpParams::Request &req, dobot::SetPTPJumpParams::Response &res)
