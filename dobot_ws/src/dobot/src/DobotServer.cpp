@@ -276,7 +276,8 @@ void InitHOMEServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 #include "dobot/srv/get_end_effector_laser.h"
 // #include "dobot/SetEndEffectorSuctionCup.h"
 #include "dobot/srv/set_end_effector_suction_cup.hpp"
-#include "dobot/GetEndEffectorSuctionCup.h"
+// #include "dobot/GetEndEffectorSuctionCup.h"
+#include "dobot/srv/get_end_effector_suction_cup.hpp"
 #include "dobot/SetEndEffectorGripper.h"
 #include "dobot/GetEndEffectorGripper.h"
 
@@ -358,17 +359,19 @@ void SetEndEffectorSuctionCupService(const std::shared_ptr<dobot::srv::SetEndEff
     // return true;
 }
 
-bool GetEndEffectorSuctionCupService(dobot::GetEndEffectorSuctionCup::Request &req, dobot::GetEndEffectorSuctionCup::Response &res)
+// 17 function 
+void GetEndEffectorSuctionCupService(const std::shared_ptr<dobot::srv::GetEndEffectorSuctionCup::Request> req, 
+                                           std::shared_ptr<dobot::srv::GetEndEffectorSuctionCup::Response> res)
 {
     bool enableCtrl, suck;
 
     res.result = GetEndEffectorLaser(&enableCtrl, &suck);
     if (res.result == DobotCommunicate_NoError) {
-        res.enableCtrl = enableCtrl;
+        res.enable_ctrl = enableCtrl;
         res.suck = suck;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetEndEffectorGripperService(dobot::SetEndEffectorGripper::Request &req, dobot::SetEndEffectorGripper::Response &res)
