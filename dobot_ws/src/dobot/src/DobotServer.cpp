@@ -329,20 +329,22 @@ void SetEndEffectorLaserService(const std::shared_ptr<dobot::srv::SetEndEffector
 }
 
 // 15 function
-void GetEndEffectorLaserService(dobot::GetEndEffectorLaser::Request &req, dobot::GetEndEffectorLaser::Response &res)
+void GetEndEffectorLaserService(const std::shared_ptr<dobot::srv::GetEndEffectorLaser::Request> req, 
+                                      std::shared_ptr<dobot::srv::GetEndEffectorLaser::Response> res)
 {
     bool enableCtrl, on;
 
     res.result = GetEndEffectorLaser(&enableCtrl, &on);
     if (res.result == DobotCommunicate_NoError) {
-        res.enableCtrl = enableCtrl;
+        res.enable_ctrl = enableCtrl;
         res.on = on;
     }
 
     // return true;
 }
 
-bool SetEndEffectorSuctionCupService(dobot::SetEndEffectorSuctionCup::Request &req, dobot::SetEndEffectorSuctionCup::Response &res)
+
+void SetEndEffectorSuctionCupService(dobot::SetEndEffectorSuctionCup::Request &req, dobot::SetEndEffectorSuctionCup::Response &res)
 {
     uint64_t queuedCmdIndex;
 
