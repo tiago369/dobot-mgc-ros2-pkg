@@ -1,5 +1,5 @@
-uint8 isJoint
+uint8 is_joint
 uint8 cmd
 ---
 int32 result
-uint64 queuedCmdIndex
+uint64 queued_cmd_index

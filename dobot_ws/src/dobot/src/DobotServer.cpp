@@ -442,7 +442,8 @@ void InitEndEffectorServices(ros::NodeHandle &n, std::vector<ros::ServiceServer>
 #include "dobot/srv/set_jog_common_params.hpp"
 // #include "dobot/GetJOGCommonParams.h"
 #include "dobot/srv/get_jog_common_params.hpp"
-#include "dobot/SetJOGCmd.h"
+// #include "dobot/SetJOGCmd.h"
+#include "dobot/srv/set_jog_cmd.hpp"
 
 // 20 function 
 void SetJOGJointParamsService(const std::shared_ptr<dobot::srv::SetJOGJointParams::Request> req, 
@@ -552,19 +553,21 @@ void GetJOGCommonParamsService(const std::shared_ptr<dobot::srv::GetJOGCommonPar
     // return true;
 }
 
-bool SetJOGCmdService(dobot::SetJOGCmd::Request &req, dobot::SetJOGCmd::Response &res)
+// 26 function
+void SetJOGCmdService(const std::shared_ptr<dobot::srv::SetJOGCmd::Request> req, 
+                            std::shared_ptr<dobot::srv::SetJOGCmd::Response> res)
 {
     JOGCmd cmd;
     uint64_t queuedCmdIndex;
 
-    cmd.isJoint = req.isJoint;
+    cmd.isJoint = req.is_joint;
     cmd.cmd = req.cmd;
     res.result = SetJOGCmd(&cmd, false, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 void InitJOGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverVec)
