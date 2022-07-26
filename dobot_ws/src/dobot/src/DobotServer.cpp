@@ -601,7 +601,8 @@ void InitJOGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 #include "dobot/srv/set_ptp_coordinate_params.hpp"
 // #include "dobot/GetPTPCoordinateParams.h"
 #include "dobot/srv/get_ptp_coordinate_params.hpp"
-#include "dobot/SetPTPJumpParams.h"
+// #include "dobot/SetPTPJumpParams.h"
+#include "dobot/srv/set_ptp_jump_params.hpp"
 #include "dobot/GetPTPJumpParams.h"
 #include "dobot/SetPTPCommonParams.h"
 #include "dobot/GetPTPCommonParams.h"
@@ -682,19 +683,21 @@ void GetPTPCoordinateParamsService(const std::shared_ptr<dobot::srv::GetPTPCoord
     // return true;
 }
 
-bool SetPTPJumpParamsService(dobot::SetPTPJumpParams::Request &req, dobot::SetPTPJumpParams::Response &res)
+// 31 function
+void SetPTPJumpParamsService(const std::shared_ptr<dobot::srv::SetPTPJumpParams::Request> req, 
+                                   std::shared_ptr<dobot::srv::SetPTPJumpParams::Response> res)
 {
     PTPJumpParams params;
     uint64_t queuedCmdIndex;
 
-    params.jumpHeight = req.jumpHeight;
-    params.zLimit = req.zLimit;
-    res.result = SetPTPJumpParams(&params, req.isQueued, &queuedCmdIndex);
+    params.jumpHeight = req.jump_height;
+    params.zLimit = req.z_limit;
+    res.result = SetPTPJumpParams(&params, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetPTPJumpParamsService(dobot::GetPTPJumpParams::Request &req, dobot::GetPTPJumpParams::Response &res)
