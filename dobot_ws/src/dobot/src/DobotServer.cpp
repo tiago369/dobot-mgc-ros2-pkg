@@ -603,7 +603,8 @@ void InitJOGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 #include "dobot/srv/get_ptp_coordinate_params.hpp"
 // #include "dobot/SetPTPJumpParams.h"
 #include "dobot/srv/set_ptp_jump_params.hpp"
-#include "dobot/GetPTPJumpParams.h"
+// #include "dobot/GetPTPJumpParams.h"
+#include "dobot/srv/get_ptp_jump_params.hpp"
 #include "dobot/SetPTPCommonParams.h"
 #include "dobot/GetPTPCommonParams.h"
 #include "dobot/SetPTPCmd.h"
@@ -700,17 +701,19 @@ void SetPTPJumpParamsService(const std::shared_ptr<dobot::srv::SetPTPJumpParams:
     // return true;
 }
 
-bool GetPTPJumpParamsService(dobot::GetPTPJumpParams::Request &req, dobot::GetPTPJumpParams::Response &res)
+// 32 function
+void GetPTPJumpParamsService(const std::shared_ptr<dobot::srv::GetPTPJumpParams::Request> req, 
+                                   std::shared_ptr<dobot::srv::GetPTPJumpParams::Response> res)
 {
     PTPJumpParams params;
 
     res.result = GetPTPJumpParams(&params);
     if (res.result == DobotCommunicate_NoError) {
-        res.jumpHeight = params.jumpHeight;
-        res.zLimit = params.zLimit;
+        res.jump_height = params.jumpHeight;
+        res.z_limit = params.zLimit;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetPTPCommonParamsService(dobot::SetPTPCommonParams::Request &req, dobot::SetPTPCommonParams::Response &res)
