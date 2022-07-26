@@ -605,7 +605,8 @@ void InitJOGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 #include "dobot/srv/set_ptp_jump_params.hpp"
 // #include "dobot/GetPTPJumpParams.h"
 #include "dobot/srv/get_ptp_jump_params.hpp"
-#include "dobot/SetPTPCommonParams.h"
+// #include "dobot/SetPTPCommonParams.h"
+#include "dobot/srv/set_ptp_common_params.hpp"
 #include "dobot/GetPTPCommonParams.h"
 #include "dobot/SetPTPCmd.h"
 
@@ -716,19 +717,21 @@ void GetPTPJumpParamsService(const std::shared_ptr<dobot::srv::GetPTPJumpParams:
     // return true;
 }
 
-bool SetPTPCommonParamsService(dobot::SetPTPCommonParams::Request &req, dobot::SetPTPCommonParams::Response &res)
+// 33 function 
+void SetPTPCommonParamsService(const std::shared_ptr<dobot::srv::SetPTPCommonParams::Request> req, 
+                                     std::shared_ptr<dobot::srv::SetPTPCommonParams::Response> res)
 {
     PTPCommonParams params;
     uint64_t queuedCmdIndex;
 
-    params.velocityRatio = req.velocityRatio;
-    params.accelerationRatio = req.accelerationRatio;
-    res.result = SetPTPCommonParams(&params, req.isQueued, &queuedCmdIndex);
+    params.velocityRatio = req.velocity_ratio;
+    params.accelerationRatio = req.acceleration_ratio;
+    res.result = SetPTPCommonParams(&params, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetPTPCommonParamsService(dobot::GetPTPCommonParams::Request &req, dobot::GetPTPCommonParams::Response &res)
