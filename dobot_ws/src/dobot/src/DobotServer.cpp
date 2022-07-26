@@ -607,7 +607,8 @@ void InitJOGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 #include "dobot/srv/get_ptp_jump_params.hpp"
 // #include "dobot/SetPTPCommonParams.h"
 #include "dobot/srv/set_ptp_common_params.hpp"
-#include "dobot/GetPTPCommonParams.h"
+// #include "dobot/GetPTPCommonParams.h"
+#include "dobot/srv/get_ptp_common_params.hpp"
 #include "dobot/SetPTPCmd.h"
 
 
@@ -734,17 +735,19 @@ void SetPTPCommonParamsService(const std::shared_ptr<dobot::srv::SetPTPCommonPar
     // return true;
 }
 
-bool GetPTPCommonParamsService(dobot::GetPTPCommonParams::Request &req, dobot::GetPTPCommonParams::Response &res)
+// 34 function
+void GetPTPCommonParamsService(const std::shared_ptr<dobot::srv::GetPTPCommonParams::Request> req, 
+                                    std::shared_ptr<dobot::srv::GetPTPCommonParams::Response> res)
 {
     PTPCommonParams params;
 
     res.result = GetPTPCommonParams(&params);
     if (res.result == DobotCommunicate_NoError) {
-        res.velocityRatio = params.velocityRatio;
-        res.accelerationRatio = params.accelerationRatio;
+        res.velocity_ratio = params.velocityRatio;
+        res.acceleration_ratio = params.accelerationRatio;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetPTPCmdService(dobot::SetPTPCmd::Request &req, dobot::SetPTPCmd::Response &res)

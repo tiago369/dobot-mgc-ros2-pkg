@@ -1,4 +1,4 @@
 ---
 int32 result
 float32 jump_height
-float32 z_Limit
+float32 z_limit
