@@ -4,4 +4,4 @@ uint8 condition
 uint16 threshold
 ---
 int32 result
-uint64 queuedCmdIndex
+uint64 queued_cmd_index

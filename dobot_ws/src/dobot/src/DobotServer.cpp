@@ -988,9 +988,12 @@ void InitWAITServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 /*
  * TRIG
  */
-#include "dobot/SetTRIGCmd.h"
+// #include "dobot/SetTRIGCmd.h"
+#include "dobot/srv/set_trig_cmd.hpp"
 
-bool SetTRIGCmdService(dobot::SetTRIGCmd::Request &req, dobot::SetTRIGCmd::Response &res)
+// 43 function
+void SetTRIGCmdService(const std::shared_ptr<dobot::srv::SetTRIGCmd::Request> req, 
+                             std::shared_ptr<dobot::srv::SetTRIGCmd::Response> res)
 {
     TRIGCmd cmd;
     uint64_t queuedCmdIndex;
@@ -1001,10 +1004,10 @@ bool SetTRIGCmdService(dobot::SetTRIGCmd::Request &req, dobot::SetTRIGCmd::Respo
     cmd.threshold = req.threshold;
     res.result = SetTRIGCmd(&cmd, true, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 void InitTRIGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverVec)
