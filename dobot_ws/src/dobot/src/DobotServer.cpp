@@ -880,7 +880,8 @@ void InitCPServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverV
 #include "dobot/srv/set_arc_params.hpp"
 // #include "dobot/GetARCParams.h"
 #include "dobot/srv/get_arc_params.hpp"
-#include "dobot/SetARCCmd.h"
+// #include "dobot/SetARCCmd.h"
+#include "dobot/srv/set_arc_cmd.hpp"
 
 // 39 function
 void SetARCParamsService(const std::shared_ptr<dobot::srv::SetARCParams::Request> req, 
@@ -918,7 +919,9 @@ void GetARCParamsService(const std::shared_ptr<dobot::srv::GetARCParams::Request
     // return true;
 }
 
-bool SetARCCmdService(dobot::SetARCCmd::Request &req, dobot::SetARCCmd::Response &res)
+// 41 function
+void SetARCCmdService(const std::shared_ptr<dobot::srv::SetARCCmd::Request> req, 
+                            std::shared_ptr<dobot::srv::SetARCCmd::Response> res)
 {
     ARCCmd cmd;
     uint64_t queuedCmdIndex;
@@ -934,10 +937,10 @@ bool SetARCCmdService(dobot::SetARCCmd::Request &req, dobot::SetARCCmd::Response
 
     res.result = SetARCCmd(&cmd, true, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 void InitARCServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverVec)

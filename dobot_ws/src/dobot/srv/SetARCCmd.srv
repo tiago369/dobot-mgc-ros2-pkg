@@ -8,4 +8,4 @@ float32 z2
 float32 r2
 ---
 int32 result
-uint64 queuedCmdIndex
+uint64 queued_cmd_index
