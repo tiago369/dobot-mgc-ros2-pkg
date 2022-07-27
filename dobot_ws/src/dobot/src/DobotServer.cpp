@@ -1023,9 +1023,12 @@ void InitTRIGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
  */
 // #include "dobot/SetIOMultiplexing.h"
 #include "dobot/srv/set_io_multiplexing.hpp"
-#include "dobot/GetIOMultiplexing.h"
-#include "dobot/SetIODO.h"
-#include "dobot/GetIODO.h"
+// #include "dobot/GetIOMultiplexing.h"
+#include "dobot/srv/get_io_multiplexing.hpp"
+// #include "dobot/SetIODO.h"
+#include "dobot/srv/set_iodo.hpp"
+// #include "dobot/GetIODO.h"
+#include "dobot/srv/get_iodo.hpp"
 #include "dobot/SetIOPWM.h"
 #include "dobot/GetIOPWM.h"
 #include "dobot/GetIODI.h"
@@ -1085,7 +1088,9 @@ void SetIODOService(const std::shared_ptr<dobot::srv::SetIODO::Request> req,
     // return true;
 }
 
-bool GetIODOService(dobot::GetIODO::Request &req, dobot::GetIODO::Response &res)
+// 47 function
+void GetIODOService(const std::shared_ptr<dobot::srv::GetIODO::Request> req, 
+                          std::shared_ptr<dobot::srv::GetIODO::Response> res)
 {
     IODO ioDO;
 
@@ -1095,23 +1100,25 @@ bool GetIODOService(dobot::GetIODO::Request &req, dobot::GetIODO::Response &res)
         res.level = ioDO.level;
     }
 
-    return true;
+    // return true;
 }
 
-bool SetIOPWMService(dobot::SetIOPWM::Request &req, dobot::SetIOPWM::Response &res)
+// 48 function
+void SetIOPWMService(const std::shared_ptr<dobot::srv::SetIOPWM::Request> req, 
+                           std::shared_ptr<dobot::srv::SetIOPWM::Response> res)
 {
     IOPWM ioPWM;
     uint64_t queuedCmdIndex;
 
     ioPWM.address = req.address;
     ioPWM.frequency = req.frequency;
-    ioPWM.dutyCycle = req.dutyCycle;
-    res.result = SetIOPWM(&ioPWM, req.isQueued, &queuedCmdIndex);
+    ioPWM.dutyCycle = req.duty_cycle;
+    res.result = SetIOPWM(&ioPWM, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetIOPWMService(dobot::GetIOPWM::Request &req, dobot::GetIOPWM::Response &res)
