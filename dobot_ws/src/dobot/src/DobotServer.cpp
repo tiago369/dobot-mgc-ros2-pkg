@@ -1021,7 +1021,8 @@ void InitTRIGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 /*
  * EIO
  */
-#include "dobot/SetIOMultiplexing.h"
+// #include "dobot/SetIOMultiplexing.h"
+#include "dobot/srv/set_io_multiplexing.hpp"
 #include "dobot/GetIOMultiplexing.h"
 #include "dobot/SetIODO.h"
 #include "dobot/GetIODO.h"
@@ -1035,19 +1036,21 @@ void InitTRIGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 #include "dobot/SetColorSensor.h"
 #include "dobot/GetColorSensor.h"
 
-bool SetIOMultiplexingService(dobot::SetIOMultiplexing::Request &req, dobot::SetIOMultiplexing::Response &res)
+// 44 function
+void SetIOMultiplexingService(const std::shared_ptr<dobot::srv::SetIOMultiplexing::Request> req, 
+                                    std::shared_ptr<dobot::srv::SetIOMultiplexing::Response> res)
 {
     IOMultiplexing ioMultiplexing;
     uint64_t queuedCmdIndex;
 
     ioMultiplexing.address = req.address;
     ioMultiplexing.multiplex = req.multiplex;
-    res.result = SetIOMultiplexing(&ioMultiplexing, req.isQueued, &queuedCmdIndex);
+    res.result = SetIOMultiplexing(&ioMultiplexing, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetIOMultiplexingService(dobot::GetIOMultiplexing::Request &req, dobot::GetIOMultiplexing::Response &res)
