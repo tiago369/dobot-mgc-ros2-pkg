@@ -797,25 +797,28 @@ void InitPTPServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 /*
  * CP
  */
-#include "dobot/SetCPParams.h"
+// #include "dobot/SetCPParams.h"
+#include "dobot/srv/set_cp_params.hpp"
 #include "dobot/GetCPParams.h"
 #include "dobot/SetCPCmd.h"
 
-bool SetCPParamsService(dobot::SetCPParams::Request &req, dobot::SetCPParams::Response &res)
+// 36 function
+void SetCPParamsService(const std::shared_ptr<dobot::srv::SetCPParams::Request> req, 
+                              std::shared_ptr<dobot::srv::SetCPParams::Response> res)
 {
     CPParams params;
     uint64_t queuedCmdIndex;
 
-    params.planAcc = req.planAcc;
-    params.juncitionVel = req.junctionVel;
+    params.planAcc = req.plan_acc;
+    params.juncitionVel = req.junction_vel;
     params.acc = req.acc;
-    params.realTimeTrack = req.realTimeTrack;
-    res.result = SetCPParams(&params, req.isQueued, &queuedCmdIndex);
+    params.realTimeTrack = req.real_time_track;
+    res.result = SetCPParams(&params, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetCPParamsService(dobot::GetCPParams::Request &req, dobot::GetCPParams::Response &res)
