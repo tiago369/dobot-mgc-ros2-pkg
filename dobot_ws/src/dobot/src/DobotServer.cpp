@@ -799,7 +799,8 @@ void InitPTPServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
  */
 // #include "dobot/SetCPParams.h"
 #include "dobot/srv/set_cp_params.hpp"
-#include "dobot/GetCPParams.h"
+// #include "dobot/GetCPParams.h"
+#include "dobot/srv/get_cp_params.hpp"
 #include "dobot/SetCPCmd.h"
 
 // 36 function
@@ -821,19 +822,21 @@ void SetCPParamsService(const std::shared_ptr<dobot::srv::SetCPParams::Request> 
     // return true;
 }
 
-bool GetCPParamsService(dobot::GetCPParams::Request &req, dobot::GetCPParams::Response &res)
+// 37 function
+void GetCPParamsService(const std::shared_ptr<dobot::srv::GetCPParams::Request> req, 
+                              std::shared_ptr<dobot::srv::GetCPParams::Response> res)
 {
     CPParams params;
 
     res.result = GetCPParams(&params);
     if (res.result == DobotCommunicate_NoError) {
-        res.planAcc = params.planAcc;
-        res.junctionVel = params.juncitionVel;
+        res.plan_acc = params.planAcc;
+        res.junction_vel = params.juncitionVel;
         res.acc = params.acc;
-        res.realTimeTrack = params.realTimeTrack;
+        res.real_time_track = params.realTimeTrack;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetCPCmdService(dobot::SetCPCmd::Request &req, dobot::SetCPCmd::Response &res)
