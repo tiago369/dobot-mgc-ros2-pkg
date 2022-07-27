@@ -958,9 +958,12 @@ void InitARCServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 /*
  * WAIT
  */
-#include "dobot/SetWAITCmd.h"
+// #include "dobot/SetWAITCmd.h"
+#include "dobot/srv/set_wait_cmd.hpp"
 
-bool SetWAITCmdService(dobot::SetWAITCmd::Request &req, dobot::SetWAITCmd::Response &res)
+// 42 function
+void SetWAITCmdService(const std::shared_ptr<dobot::srv::SetWAITCmd::Request> req, 
+                             std::shared_ptr<dobot::srv::SetWAITCmd::Response> res)
 {
     WAITCmd cmd;
     uint64_t queuedCmdIndex;
@@ -968,10 +971,10 @@ bool SetWAITCmdService(dobot::SetWAITCmd::Request &req, dobot::SetWAITCmd::Respo
     cmd.timeout = req.timeout;
     res.result = SetWAITCmd(&cmd, true, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 void InitWAITServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverVec)

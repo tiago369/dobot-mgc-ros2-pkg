@@ -82,6 +82,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetARCParams.srv"
   "srv/GetARCParams.srv"
   "srv/SetARCCmd.srv"
+  "srv/SetWAITCmd.srv"
 )
 
 ## Generate messages in the 'msg' folder
@@ -91,7 +92,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 ## Generate services in the 'srv' folder
 set(srv_files
-  # "srv/SetWAITCmd.srv"
   # "srv/SetTRIGCmd.srv"
   # "srv/SetIOMultiplexing.srv"
   # "srv/GetIOMultiplexing.srv"
