@@ -1068,19 +1068,21 @@ void GetIOMultiplexingService(const std::shared_ptr<dobot::srv::GetIOMultiplexin
     // return true;
 }
 
-bool SetIODOService(dobot::SetIODO::Request &req, dobot::SetIODO::Response &res)
+// 46 function
+void SetIODOService(const std::shared_ptr<dobot::srv::SetIODO::Request> req, 
+                          std::shared_ptr<dobot::srv::SetIODO::Response> res)
 {
     IODO ioDO;
     uint64_t queuedCmdIndex;
 
     ioDO.address = req.address;
     ioDO.level = req.level;
-    res.result = SetIODO(&ioDO, req.isQueued, &queuedCmdIndex);
+    res.result = SetIODO(&ioDO, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetIODOService(dobot::GetIODO::Request &req, dobot::GetIODO::Response &res)
