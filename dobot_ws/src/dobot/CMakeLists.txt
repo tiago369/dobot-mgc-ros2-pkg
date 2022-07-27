@@ -78,6 +78,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/SetPTPCmd.srv"
   "srv/SetCPParams.srv" 
   "srv/GetCPParams.srv"
+  "srv/SetCPCmd.srv"
 )
 
 ## Generate messages in the 'msg' folder
@@ -97,7 +98,6 @@ set(srv_files
   # 
   # 
   # 
-  # "srv/SetCPCmd.srv"
   # "srv/SetARCParams.srv"
   # "srv/GetARCParams.srv"
   # "srv/SetARCCmd.srv"

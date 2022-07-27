@@ -801,7 +801,8 @@ void InitPTPServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 #include "dobot/srv/set_cp_params.hpp"
 // #include "dobot/GetCPParams.h"
 #include "dobot/srv/get_cp_params.hpp"
-#include "dobot/SetCPCmd.h"
+// #include "dobot/SetCPCmd.h"
+#include "dobot/srv/set_cp_cmd.hpp"
 
 // 36 function
 void SetCPParamsService(const std::shared_ptr<dobot::srv::SetCPParams::Request> req, 
@@ -839,12 +840,14 @@ void GetCPParamsService(const std::shared_ptr<dobot::srv::GetCPParams::Request> 
     // return true;
 }
 
-bool SetCPCmdService(dobot::SetCPCmd::Request &req, dobot::SetCPCmd::Response &res)
+// 38 function
+void SetCPCmdService(const std::shared_ptr<dobot::srv::etCPCmd::Request> req, 
+                           std::shared_ptr<dobot::srv::SetCPCmd::Response> res)
 {
     CPCmd cmd;
     uint64_t queuedCmdIndex;
 
-    cmd.cpMode = req.cpMode;
+    cmd.cpMode = req.cp_mode;
     cmd.x = req.x;
     cmd.y = req.y;
     cmd.z = req.z;
@@ -852,10 +855,10 @@ bool SetCPCmdService(dobot::SetCPCmd::Request &req, dobot::SetCPCmd::Response &r
 
     res.result = SetCPCmd(&cmd, true, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 void InitCPServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverVec)
