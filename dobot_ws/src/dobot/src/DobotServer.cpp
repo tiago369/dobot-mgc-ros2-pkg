@@ -878,7 +878,8 @@ void InitCPServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverV
  */
 // #include "dobot/SetARCParams.h"
 #include "dobot/srv/set_arc_params.hpp"
-#include "dobot/GetARCParams.h"
+// #include "dobot/GetARCParams.h"
+#include "dobot/srv/get_arc_params.hpp"
 #include "dobot/SetARCCmd.h"
 
 // 39 function
@@ -900,19 +901,21 @@ void SetARCParamsService(const std::shared_ptr<dobot::srv::SetARCParams::Request
     // return true;
 }
 
-bool GetARCParamsService(dobot::GetARCParams::Request &req, dobot::GetARCParams::Response &res)
+// 40 function
+void GetARCParamsService(const std::shared_ptr<dobot::srv::GetARCParams::Request> req, 
+                               std::shared_ptr<dobot::srv::GetARCParams::Response> res)
 {
     ARCParams params;
 
     res.result = GetARCParams(&params);
     if (res.result == DobotCommunicate_NoError) {
-        res.xyzVelocity = params.xyzVelocity;
-        res.rVelocity = params.rVelocity;
-        res.xyzAcceleration = params.xyzAcceleration;
-        res.rAcceleration = params.rAcceleration;
+        res.xyz_velocity = params.xyzVelocity;
+        res.r_velocity = params.rVelocity;
+        res.xyz_acceleration = params.xyzAcceleration;
+        res.r_acceleration = params.rAcceleration;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetARCCmdService(dobot::SetARCCmd::Request &req, dobot::SetARCCmd::Response &res)
