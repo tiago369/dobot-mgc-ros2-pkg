@@ -609,8 +609,8 @@ void InitJOGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &server
 #include "dobot/srv/set_ptp_common_params.hpp"
 // #include "dobot/GetPTPCommonParams.h"
 #include "dobot/srv/get_ptp_common_params.hpp"
-#include "dobot/SetPTPCmd.h"
-
+// #include "dobot/SetPTPCmd.h"
+#include "dobot/srv/set_ptp_cmd.hpp"
 
 // 27 function 
 void SetPTPJointParamsService(const std::shared_ptr<dobot::srv::SetPTPJointParams::Request> req, 
@@ -750,22 +750,24 @@ void GetPTPCommonParamsService(const std::shared_ptr<dobot::srv::GetPTPCommonPar
     // return true;
 }
 
-bool SetPTPCmdService(dobot::SetPTPCmd::Request &req, dobot::SetPTPCmd::Response &res)
+// 35 function
+void SetPTPCmdService(const std::shared_ptr<dobot::srv::SetPTPCmd::Request> req, 
+                            std::shared_ptr<dobot::srv::SetPTPCmd::Response> res)
 {
     PTPCmd cmd;
     uint64_t queuedCmdIndex;
 
-    cmd.ptpMode = req.ptpMode;
+    cmd.ptpMode = req.ptp_mode;
     cmd.x = req.x;
     cmd.y = req.y;
     cmd.z = req.z;
     cmd.r = req.r;
     res.result = SetPTPCmd(&cmd, true, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 void InitPTPServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serverVec)
