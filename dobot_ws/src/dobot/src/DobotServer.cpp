@@ -1053,7 +1053,9 @@ void SetIOMultiplexingService(const std::shared_ptr<dobot::srv::SetIOMultiplexin
     // return true;
 }
 
-bool GetIOMultiplexingService(dobot::GetIOMultiplexing::Request &req, dobot::GetIOMultiplexing::Response &res)
+// 45 function
+void GetIOMultiplexingService(const std::shared_ptr<dobot::srv::GetIOMultiplexing::Request> req, 
+                                    std::shared_ptr<dobot::srv::GetIOMultiplexing::Response> res)
 {
     IOMultiplexing ioMultiplexing;
 
@@ -1063,7 +1065,7 @@ bool GetIOMultiplexingService(dobot::GetIOMultiplexing::Request &req, dobot::Get
         res.multiplex = ioMultiplexing.multiplex;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetIODOService(dobot::SetIODO::Request &req, dobot::SetIODO::Response &res)
