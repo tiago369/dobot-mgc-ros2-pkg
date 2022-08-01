@@ -1031,10 +1031,14 @@ void InitTRIGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 #include "dobot/srv/get_iodo.hpp"
 // #include "dobot/SetIOPWM.h"
 #include "dobot/srv/set_iopwm.hpp"
-#include "dobot/GetIOPWM.h"
-#include "dobot/GetIODI.h"
-#include "dobot/GetIOADC.h"
-#include "dobot/SetEMotor.h"
+// #include "dobot/GetIOPWM.h"
+#include "dobot/srv/get_iopwm.hpp"
+// #include "dobot/GetIODI.h"
+#include "dobot/srv/get_iodi.hpp"
+// #include "dobot/GetIOADC.h"
+#include "dobot/srv/get_ioadc.hpp"
+// #include "dobot/SetEMotor.h"
+#include "dobot/srv/set_e_motor.hpp"
 #include "dobot/SetInfraredSensor.h"
 #include "dobot/GetInfraredSensor.h"
 #include "dobot/SetColorSensor.h"
@@ -1168,20 +1172,22 @@ void GetIOADCService(const std::shared_ptr<dobot::srv::GetIOADC::Request> req,
     // return true;
 }
 
-bool SetEMotorService(dobot::SetEMotor::Request &req, dobot::SetEMotor::Response &res)
+// 52 function
+void SetEMotorService(const std::shared_ptr<dobot::srv::SetEMotor::Request> req, 
+                            std::shared_ptr<dobot::srv::SetEMotor::Response> res)
 {
     EMotor eMotor;
     uint64_t queuedCmdIndex;
 
     eMotor.index = req.index;
-    eMotor.isEnabled = req.isEnabled;
+    eMotor.isEnabled = req.is_enabled;
     eMotor.speed = req.speed;
-    res.result = SetEMotor(&eMotor, req.isQueued, &queuedCmdIndex);
+    res.result = SetEMotor(&eMotor, req.is_queued, &queuedCmdIndex);
     if (res.result == DobotCommunicate_NoError) {
-        res.queuedCmdIndex = queuedCmdIndex;
+        res.queued_cmd_index = queuedCmdIndex;
     }
 
-    return true;
+    // return true;
 }
 
 

@@ -92,6 +92,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetIOPWM.srv"
   "srv/GetIODI.srv"
   "srv/GetIOADC.srv"
+  "srv/SetEMotor.srv"
 )
 
 ## Generate messages in the 'msg' folder
@@ -101,7 +102,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 
 ## Generate services in the 'srv' folder
 set(srv_files
-  # "srv/SetEMotor.srv"
   # "srv/GetInfraredSensor.srv"
   # "srv/SetInfraredSensor.srv"
   # "srv/SetColorSensor.srv"
