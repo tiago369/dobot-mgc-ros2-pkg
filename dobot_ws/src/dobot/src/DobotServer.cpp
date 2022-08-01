@@ -1029,7 +1029,8 @@ void InitTRIGServices(ros::NodeHandle &n, std::vector<ros::ServiceServer> &serve
 #include "dobot/srv/set_iodo.hpp"
 // #include "dobot/GetIODO.h"
 #include "dobot/srv/get_iodo.hpp"
-#include "dobot/SetIOPWM.h"
+// #include "dobot/SetIOPWM.h"
+#include "dobot/srv/set_iopwm.hpp"
 #include "dobot/GetIOPWM.h"
 #include "dobot/GetIODI.h"
 #include "dobot/GetIOADC.h"
@@ -1121,7 +1122,9 @@ void SetIOPWMService(const std::shared_ptr<dobot::srv::SetIOPWM::Request> req,
     // return true;
 }
 
-bool GetIOPWMService(dobot::GetIOPWM::Request &req, dobot::GetIOPWM::Response &res)
+// 49 function
+void GetIOPWMService(const std::shared_ptr<dobot::srv::GetIOPWM::Request> req, 
+                           std::shared_ptr<dobot::srv::GetIOPWM::Response> res)
 {
     IOPWM ioPWM;
 
@@ -1129,10 +1132,10 @@ bool GetIOPWMService(dobot::GetIOPWM::Request &req, dobot::GetIOPWM::Response &r
     res.result = GetIOPWM(&ioPWM);
     if (res.result == DobotCommunicate_NoError) {
         res.frequency = ioPWM.frequency;
-        res.dutyCycle = ioPWM.dutyCycle;
+        res.duty_cycle = ioPWM.dutyCycle;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetIODIService(dobot::GetIODI::Request &req, dobot::GetIODI::Response &res)
