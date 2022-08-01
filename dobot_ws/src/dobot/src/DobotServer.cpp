@@ -1153,7 +1153,9 @@ void GetIODIService(const std::shared_ptr<dobot::srv::GetIODI::Request> req,
     // return true;
 }
 
-bool GetIOADCService(dobot::GetIOADC::Request &req, dobot::GetIOADC::Response &res)
+// 51 function
+void GetIOADCService(const std::shared_ptr<dobot::srv::GetIOADC::Request> req, 
+                           std::shared_ptr<dobot::srv::GetIOADC::Response> res)
 {
     IOADC ioADC;
 
@@ -1163,7 +1165,7 @@ bool GetIOADCService(dobot::GetIOADC::Request &req, dobot::GetIOADC::Response &r
         res.value = ioADC.value;
     }
 
-    return true;
+    // return true;
 }
 
 bool SetEMotorService(dobot::SetEMotor::Request &req, dobot::SetEMotor::Response &res)
