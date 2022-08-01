@@ -1138,7 +1138,9 @@ void GetIOPWMService(const std::shared_ptr<dobot::srv::GetIOPWM::Request> req,
     // return true;
 }
 
-bool GetIODIService(dobot::GetIODI::Request &req, dobot::GetIODI::Response &res)
+// 50 function
+void GetIODIService(const std::shared_ptr<dobot::srv::GetIODI::Request> req, 
+                          std::shared_ptr<dobot::srv::GetIODI::Response> res)
 {
     IODI ioDI;
 
@@ -1148,7 +1150,7 @@ bool GetIODIService(dobot::GetIODI::Request &req, dobot::GetIODI::Response &res)
         res.level = ioDI.level;
     }
 
-    return true;
+    // return true;
 }
 
 bool GetIOADCService(dobot::GetIOADC::Request &req, dobot::GetIOADC::Response &res)
